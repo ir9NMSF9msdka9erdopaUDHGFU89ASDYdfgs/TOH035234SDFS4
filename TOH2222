@@ -1,0 +1,3480 @@
+-- PRO TOWER OF HELL
+-- b0.01
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+
+if not game:IsLoaded() then
+	wait()
+end
+
+--[[
+
+1962086868 -- normal
+
+3582763398 -- pro
+
+5253186791 -- appeal
+
+]]--
+
+if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
+
+	if _G.EXH_ACTIVE == true then
+		_G.LOCALLEVEL += 1
+		if _G.LOCALLEVEL >= 3 then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "dumbass";
+				Text = "fucking exhibition hub is already running. ching chong bing bong?? like wtf. 你是个白痴";
+				Duration = 5;
+			})
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Exhibition Hub is already running.";
+				Duration = 5;
+			})
+		end
+	else
+		_G.LOCALLEVEL = 0
+		_G.EXH_ACTIVE = true
+
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Warning";
+			Text = "It is recommended that you play in Pro Tower of Hell.";
+			Duration = 10;
+		})
+
+		EXHIBITION = Instance.new("ScreenGui")
+		loading = Instance.new("ImageLabel")
+		welcome = Instance.new("TextLabel")
+		designx = Instance.new("ImageLabel")
+		dam = Instance.new("ImageLabel")
+		vers = Instance.new("TextLabel")
+		title = Instance.new("TextLabel")
+		UIGradient = Instance.new("UIGradient")
+		dam_2 = Instance.new("ImageLabel")
+		lliinneee = Instance.new("TextLabel")
+		UIGradient_2 = Instance.new("UIGradient")
+		Frame = Instance.new("ImageLabel")
+		a = Instance.new("ImageLabel")
+		a_2 = Instance.new("TextLabel")
+		UIGradient_3 = Instance.new("UIGradient")
+		close = Instance.new("ImageButton")
+		Frame_2 = Instance.new("ImageLabel")
+		PlayerFrame = Instance.new("ScrollingFrame")
+		TextLabel = Instance.new("TextLabel")
+		flyfalse = Instance.new("TextButton")
+		flytrue = Instance.new("TextButton")
+		TextLabel_2 = Instance.new("TextLabel")
+		characreset = Instance.new("TextButton")
+		TextLabel_3 = Instance.new("TextLabel")
+		TextLabel_4 = Instance.new("TextLabel")
+		bypasstrue = Instance.new("TextButton")
+		bypassfalse = Instance.new("TextButton")
+		TextLabel_5 = Instance.new("TextLabel")
+		TextLabel_6 = Instance.new("TextLabel")
+		TextLabel_7 = Instance.new("TextLabel")
+		bypassingtext = Instance.new("TextLabel")
+		jumppowerx = Instance.new("TextBox")
+		grieffalse = Instance.new("TextButton")
+		greiftrue = Instance.new("TextButton")
+		TextLabel_8 = Instance.new("TextLabel")
+		partsdelete = Instance.new("TextButton")
+		walkspeedx = Instance.new("TextBox")
+		a_3 = Instance.new("TextLabel")
+		AutofarmFrame = Instance.new("ScrollingFrame")
+		farmtrue = Instance.new("TextButton")
+		farmfalse = Instance.new("TextButton")
+		TextLabel_9 = Instance.new("TextLabel")
+		TextLabel_10 = Instance.new("TextLabel")
+		TextLabel_11 = Instance.new("TextLabel")
+		coinsbeforex = Instance.new("TextLabel")
+		coinsnowx = Instance.new("TextLabel")
+		TextLabel_13 = Instance.new("TextLabel")
+		farmstatus = Instance.new("TextLabel")
+		AutoBuyFrame = Instance.new("ScrollingFrame")
+		TextLabel_14 = Instance.new("TextLabel")
+		TextLabel_15 = Instance.new("TextLabel")
+		buycratefalse = Instance.new("TextButton")
+		cratesbought = Instance.new("TextLabel")
+		buycratetrue = Instance.new("TextButton")
+		TextLabel_16 = Instance.new("TextLabel")
+		invinfalse = Instance.new("TextButton")
+		invintrue = Instance.new("TextButton")
+		TextLabel_17 = Instance.new("TextLabel")
+		speedbuyfalse = Instance.new("TextButton")
+		speedbuytrue = Instance.new("TextButton")
+		TextLabel_18 = Instance.new("TextLabel")
+		gravfalse = Instance.new("TextButton")
+		gravtrue = Instance.new("TextButton")
+		TextLabel_19 = Instance.new("TextLabel")
+		fogfalse = Instance.new("TextButton")
+		fogtrue = Instance.new("TextButton")
+		TextLabel_20 = Instance.new("TextLabel")
+		negativefalse = Instance.new("TextButton")
+		negativetrue = Instance.new("TextButton")
+		TextLabel_21 = Instance.new("TextLabel")
+		lengthfalse = Instance.new("TextButton")
+		lengthtrue = Instance.new("TextButton")
+		TextLabel_22 = Instance.new("TextLabel")
+		timefalse = Instance.new("TextButton")
+		timetrue = Instance.new("TextButton")
+		SettingsFrame = Instance.new("ScrollingFrame")
+		TextLabel_23 = Instance.new("TextLabel")
+		shadowfalse = Instance.new("TextButton")
+		shadowtrue = Instance.new("TextButton")
+		TextLabel_24 = Instance.new("TextLabel")
+		selfdestruct = Instance.new("TextButton")
+		TextLabel_25 = Instance.new("TextLabel")
+		vers_2 = Instance.new("TextLabel")
+		TextLabel_26 = Instance.new("TextLabel")
+		lastupdat = Instance.new("TextLabel")
+		TextLabel_27 = Instance.new("TextLabel")
+		TextLabel_28 = Instance.new("TextLabel")
+		damn = Instance.new("ImageLabel")
+		damn2 = Instance.new("ImageLabel")
+		CatergoryFrame = Instance.new("ScrollingFrame")
+		Player = Instance.new("TextButton")
+		Autofarm = Instance.new("TextButton")
+		Inventoryx = Instance.new("TextButton")
+		Teleportx = Instance.new("TextButton")
+		Settingsx = Instance.new("TextButton")
+		Otherx = Instance.new("TextButton")
+		ImageLabel = Instance.new("ImageLabel")
+		TeleportFrame = Instance.new("ScrollingFrame")
+		playertp = Instance.new("TextButton")
+		TextLabel_29 = Instance.new("TextLabel")
+		targetnametp = Instance.new("TextBox")
+		OtherFrame = Instance.new("ScrollingFrame")
+		tptoolgiv = Instance.new("TextButton")
+		TextLabel_30 = Instance.new("TextLabel")
+		TextLabel_31 = Instance.new("TextLabel")
+		sayhi = Instance.new("TextButton")
+		minimized = Instance.new("ImageLabel")
+		TextLabel_32 = Instance.new("TextLabel")
+		open = Instance.new("TextButton")
+		minimized_2 = Instance.new("ImageLabel")
+		confirm = Instance.new("ImageLabel")
+		TextLabel_33 = Instance.new("TextLabel")
+		yesxx = Instance.new("TextButton")
+		yesxx_2 = Instance.new("TextButton")
+		asdasd = Instance.new("ImageLabel")
+		Changelog = Instance.new("ImageLabel")
+		f = Instance.new("ImageLabel")
+		dam_3 = Instance.new("ImageLabel")
+		dam_4 = Instance.new("ImageLabel")
+		blureffect = Instance.new("BlurEffect")
+		TextLabel_34 = Instance.new("TextLabel")
+		TextLabel_35 = Instance.new("TextLabel")
+		changelogframe = Instance.new("ScrollingFrame")
+		plus = Instance.new("TextLabel")
+		changed = Instance.new("TextLabel")
+		changed_2 = Instance.new("TextLabel")
+		plus_2 = Instance.new("TextLabel")
+		okx = Instance.new("TextButton")
+		Playerr = game.Players.LocalPlayer
+		Plrr = game:GetService("Players").LocalPlayer
+
+		speeding = false
+		farmactivated = false
+		bypassed = false
+
+		--Properties:
+
+		EXHIBITION.Name = "EXHIBITION </>"
+		EXHIBITION.Parent = game.CoreGui
+
+		loading.Name = "loading"
+		loading.Parent = EXHIBITION
+		loading.AnchorPoint = Vector2.new(0.5, 0.5)
+		loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		loading.BackgroundTransparency = 1.000
+		loading.Position = UDim2.new(0.499592543, 0, 0.49999997, 0)
+		loading.Size = UDim2.new(0, 236, 0, 236)
+		loading.Image = "rbxassetid://3570695787"
+		loading.ImageColor3 = Color3.fromRGB(11, 11, 11)
+		loading.ScaleType = Enum.ScaleType.Slice
+		loading.SliceCenter = Rect.new(100, 100, 100, 100)
+		loading.SliceScale = 0.050
+
+		welcome.Name = "welcome"
+		welcome.Parent = loading
+		welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		welcome.BackgroundTransparency = 1.000
+		welcome.Position = UDim2.new(0.0762711838, 0, 0.135593206, 0)
+		welcome.Size = UDim2.new(0, 200, 0, 50)
+		welcome.ZIndex = 2
+		welcome.Font = Enum.Font.FredokaOne
+		welcome.Text = ""
+		welcome.TextColor3 = Color3.fromRGB(207, 207, 207)
+		welcome.TextSize = 34.000
+
+		designx.Name = "designx"
+		designx.Parent = loading
+		designx.AnchorPoint = Vector2.new(0.5, 0.5)
+		designx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		designx.BackgroundTransparency = 1.000
+		designx.Position = UDim2.new(0.420467049, 0, 0.412740797, 0)
+		designx.Size = UDim2.new(0, 233, 0, 229)
+		designx.ZIndex = -1
+		designx.Image = "rbxassetid://3570695787"
+		designx.ImageColor3 = Color3.fromRGB(31, 31, 31)
+		designx.ScaleType = Enum.ScaleType.Slice
+		designx.SliceCenter = Rect.new(100, 100, 100, 100)
+		designx.SliceScale = 0.050
+
+		blureffect.Parent = game.Lighting
+
+		dam.Name = "dam"
+		dam.Parent = loading
+		dam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam.BackgroundTransparency = 1.000
+		dam.Position = UDim2.new(-0.719508648, 0, -0.746990502, 0)
+		dam.Size = UDim2.new(0, 548, 0, 548)
+		dam.ZIndex = -2
+		dam.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		vers.Name = "vers"
+		vers.Parent = loading
+		vers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		vers.BackgroundTransparency = 1.000
+		vers.Position = UDim2.new(0.457627118, 0, 0.817796588, 0)
+		vers.Size = UDim2.new(0, 200, 0, 50)
+		vers.Font = Enum.Font.FredokaOne
+		vers.Text = "b0.01"
+		vers.TextColor3 = Color3.fromRGB(57, 57, 57)
+		vers.TextSize = 14.000
+
+		title.Name = "title"
+		title.Parent = loading
+		title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		title.BackgroundTransparency = 1.000
+		title.Position = UDim2.new(0.0762711838, 0, 0.521186411, 0)
+		title.Size = UDim2.new(0, 200, 0, 42)
+		title.ZIndex = 2
+		title.Font = Enum.Font.FredokaOne
+		title.Text = "exhibition hub"
+		title.TextColor3 = Color3.fromRGB(255, 255, 255)
+		title.TextSize = 25.000
+		title.TextTransparency = 1.000
+		title.TextWrapped = true
+
+		UIGradient.Parent = title
+
+		dam_2.Name = "dam"
+		dam_2.Parent = loading
+		dam_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_2.BackgroundTransparency = 1.000
+		dam_2.Position = UDim2.new(-0.809322417, 0, -0.677135766, 0)
+		dam_2.Size = UDim2.new(0, 548, 0, 548)
+		dam_2.ZIndex = -2
+		dam_2.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		lliinneee.Name = "lliinneee"
+		lliinneee.Parent = loading
+		lliinneee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lliinneee.BackgroundTransparency = 1.000
+		lliinneee.Position = UDim2.new(0.0762711838, 0, 0.648305058, 0)
+		lliinneee.Size = UDim2.new(0, 200, 0, 15)
+		lliinneee.ZIndex = 5
+		lliinneee.Font = Enum.Font.SourceSansBold
+		lliinneee.Text = "━━━━━━━━"
+		lliinneee.TextColor3 = Color3.fromRGB(255, 255, 255)
+		lliinneee.TextSize = 25.000
+		lliinneee.TextTransparency = 1.000
+		lliinneee.TextWrapped = true
+
+		UIGradient_2.Parent = lliinneee
+
+		Frame.Name = "Frame"
+		Frame.Parent = EXHIBITION
+		Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame.BackgroundTransparency = 1.000
+		Frame.Position = UDim2.new(0.31400001, 0, 1.89999998, 0)
+		Frame.Size = UDim2.new(0, 459, 0, 270)
+		Frame.Image = "rbxassetid://3570695787"
+		Frame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Frame.ScaleType = Enum.ScaleType.Slice
+		Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame.SliceScale = 0.040
+
+		a.Name = "a"
+		a.Parent = Frame
+		a.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a.BackgroundTransparency = 1.000
+		a.Position = UDim2.new(0.000197067755, 0, -0.0020478426, 0)
+		a.Size = UDim2.new(0, 459, 0, 51)
+		a.ZIndex = 2
+		a.Image = "rbxassetid://3570695787"
+		a.ImageColor3 = Color3.fromRGB(15, 15, 15)
+		a.ScaleType = Enum.ScaleType.Slice
+		a.SliceCenter = Rect.new(100, 100, 100, 100)
+		a.SliceScale = 0.040
+
+		a_2.Name = "a"
+		a_2.Parent = Frame
+		a_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a_2.BackgroundTransparency = 1.000
+		a_2.Position = UDim2.new(-0.052287586, 0, 0, 0)
+		a_2.Size = UDim2.new(0, 200, 0, 50)
+		a_2.ZIndex = 3
+		a_2.Font = Enum.Font.FredokaOne
+		a_2.Text = "exhibition hub"
+		a_2.TextColor3 = Color3.fromRGB(216, 216, 216)
+		a_2.TextSize = 20.000
+
+		UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+		UIGradient_3.Parent = a_2
+
+		close.Name = "close"
+		close.Parent = Frame
+		close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		close.BackgroundTransparency = 1.000
+		close.Position = UDim2.new(0.917211354, 0, 0.0481481478, 0)
+		close.Size = UDim2.new(0, 24, 0, 24)
+		close.ZIndex = 4
+		close.Image = "rbxassetid://3570695787"
+		close.ImageColor3 = Color3.fromRGB(118, 0, 0)
+
+		Frame_2.Name = "Frame"
+		Frame_2.Parent = Frame
+		Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame_2.BackgroundTransparency = 1.000
+		Frame_2.Position = UDim2.new(-0.0281253718, 0, -0.0515177399, 0)
+		Frame_2.Size = UDim2.new(0, 457, 0, 270)
+		Frame_2.ZIndex = -1
+		Frame_2.Image = "rbxassetid://3570695787"
+		Frame_2.ImageColor3 = Color3.fromRGB(33, 33, 33)
+		Frame_2.ScaleType = Enum.ScaleType.Slice
+		Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame_2.SliceScale = 0.040
+
+		PlayerFrame.Name = "PlayerFrame"
+		PlayerFrame.Parent = Frame
+		PlayerFrame.Active = true
+		PlayerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		PlayerFrame.BackgroundTransparency = 1.000
+		PlayerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		PlayerFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		PlayerFrame.Size = UDim2.new(0, 274, 0, 199)
+		PlayerFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		PlayerFrame.ScrollBarThickness = 6
+
+		TextLabel.Parent = PlayerFrame
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel.Font = Enum.Font.FredokaOne
+		TextLabel.Text = "Anticheat Bypass:"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 18.000
+		TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+		flyfalse.Name = "flyfalse"
+		flyfalse.Parent = PlayerFrame
+		flyfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flyfalse.BackgroundTransparency = 1.000
+		flyfalse.Position = UDim2.new(0.270072997, 0, 0.0444444455, 0)
+		flyfalse.Size = UDim2.new(0, 76, 0, 50)
+		flyfalse.Font = Enum.Font.FredokaOne
+		flyfalse.Text = "False"
+		flyfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		flyfalse.TextSize = 18.000
+
+		flytrue.Name = "flytrue"
+		flytrue.Parent = PlayerFrame
+		flytrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flytrue.BackgroundTransparency = 1.000
+		flytrue.Position = UDim2.new(0.270072997, 0, 0.0444444455, 0)
+		flytrue.Size = UDim2.new(0, 76, 0, 50)
+		flytrue.Visible = false
+		flytrue.Font = Enum.Font.FredokaOne
+		flytrue.Text = "True"
+		flytrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		flytrue.TextSize = 18.000
+
+		TextLabel_2.Parent = PlayerFrame
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(0.0839416087, 0, 0.0456556492, 0)
+		TextLabel_2.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_2.Font = Enum.Font.FredokaOne
+		TextLabel_2.Text = "CFly:"
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextSize = 18.000
+		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		characreset.Name = "characreset"
+		characreset.Parent = PlayerFrame
+		characreset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		characreset.BackgroundTransparency = 1.000
+		characreset.Position = UDim2.new(0.572992682, 0, 0.296580076, 0)
+		characreset.Size = UDim2.new(0, 72, 0, 50)
+		characreset.Font = Enum.Font.FredokaOne
+		characreset.Text = "Click"
+		characreset.TextColor3 = Color3.fromRGB(163, 0, 0)
+		characreset.TextSize = 18.000
+
+		TextLabel_3.Parent = PlayerFrame
+		TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.BackgroundTransparency = 1.000
+		TextLabel_3.Position = UDim2.new(0.0839416087, 0, 0.296581566, 0)
+		TextLabel_3.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_3.Font = Enum.Font.FredokaOne
+		TextLabel_3.Text = "Reset Character:"
+		TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.TextSize = 18.000
+		TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_4.Parent = PlayerFrame
+		TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.BackgroundTransparency = 1.000
+		TextLabel_4.Position = UDim2.new(0.0839416087, 0, 0.0919519439, 0)
+		TextLabel_4.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_4.Font = Enum.Font.FredokaOne
+		TextLabel_4.Text = "Delete KillParts:"
+		TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.TextSize = 18.000
+		TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+		bypasstrue.Name = "bypasstrue"
+		bypasstrue.Parent = PlayerFrame
+		bypasstrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		bypasstrue.BackgroundTransparency = 1.000
+		bypasstrue.Position = UDim2.new(0.62043798, 0, -0.000925924629, 0)
+		bypasstrue.Size = UDim2.new(0, 76, 0, 50)
+		bypasstrue.Visible = false
+		bypasstrue.Font = Enum.Font.FredokaOne
+		bypasstrue.Text = "True"
+		bypasstrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		bypasstrue.TextSize = 18.000
+
+		bypassfalse.Name = "bypassfalse"
+		bypassfalse.Parent = PlayerFrame
+		bypassfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		bypassfalse.BackgroundTransparency = 1.000
+		bypassfalse.Position = UDim2.new(0.62043798, 0, -0.000925924629, 0)
+		bypassfalse.Size = UDim2.new(0, 76, 0, 50)
+		bypassfalse.Font = Enum.Font.FredokaOne
+		bypassfalse.Text = "False"
+		bypassfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		bypassfalse.TextSize = 18.000
+
+		TextLabel_5.Parent = PlayerFrame
+		TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.BackgroundTransparency = 1.000
+		TextLabel_5.Position = UDim2.new(0.0839416087, 0, 0.232692704, 0)
+		TextLabel_5.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_5.Font = Enum.Font.FredokaOne
+		TextLabel_5.Text = "Anti-Grief:"
+		TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.TextSize = 18.000
+		TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_6.Parent = PlayerFrame
+		TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.BackgroundTransparency = 1.000
+		TextLabel_6.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_6.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_6.Font = Enum.Font.FredokaOne
+		TextLabel_6.Text = "WalkSpeed:"
+		TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.TextSize = 18.000
+		TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_7.Parent = PlayerFrame
+		TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.BackgroundTransparency = 1.000
+		TextLabel_7.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_7.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_7.Font = Enum.Font.FredokaOne
+		TextLabel_7.Text = "JumpPower:"
+		TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.TextSize = 18.000
+		TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+		bypassingtext.Name = "bypassingtext"
+		bypassingtext.Parent = PlayerFrame
+		bypassingtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		bypassingtext.BackgroundTransparency = 1.000
+		bypassingtext.Position = UDim2.new(0.653284669, 0, -0.000640645623, 0)
+		bypassingtext.Size = UDim2.new(0, 30, 0, 50)
+		bypassingtext.Visible = false
+		bypassingtext.Font = Enum.Font.FredokaOne
+		bypassingtext.Text = "Hold On..."
+		bypassingtext.TextColor3 = Color3.fromRGB(65, 65, 65)
+		bypassingtext.TextSize = 18.000
+		bypassingtext.TextXAlignment = Enum.TextXAlignment.Left
+
+		jumppowerx.Name = "jumppowerx"
+		jumppowerx.Parent = PlayerFrame
+		jumppowerx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		jumppowerx.BackgroundTransparency = 1.000
+		jumppowerx.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		jumppowerx.Position = UDim2.new(0.525547445, 0, 0.193000004, 0)
+		jumppowerx.Size = UDim2.new(0, 58, 0, 35)
+		jumppowerx.Font = Enum.Font.FredokaOne
+		jumppowerx.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+		jumppowerx.Text = "50"
+		jumppowerx.TextColor3 = Color3.fromRGB(148, 148, 148)
+		jumppowerx.TextSize = 18.000
+
+		grieffalse.Name = "grieffalse"
+		grieffalse.Parent = PlayerFrame
+		grieffalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		grieffalse.BackgroundTransparency = 1.000
+		grieffalse.Position = UDim2.new(0.470802903, 0, 0.232407391, 0)
+		grieffalse.Size = UDim2.new(0, 76, 0, 50)
+		grieffalse.Font = Enum.Font.FredokaOne
+		grieffalse.Text = "False"
+		grieffalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		grieffalse.TextSize = 18.000
+
+		greiftrue.Name = "greiftrue"
+		greiftrue.Parent = PlayerFrame
+		greiftrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		greiftrue.BackgroundTransparency = 1.000
+		greiftrue.Position = UDim2.new(0.470802903, 0, 0.232407391, 0)
+		greiftrue.Size = UDim2.new(0, 76, 0, 50)
+		greiftrue.Visible = false
+		greiftrue.Font = Enum.Font.FredokaOne
+		greiftrue.Text = "True"
+		greiftrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		greiftrue.TextSize = 18.000
+
+		TextLabel_8.Parent = PlayerFrame
+		TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_8.BackgroundTransparency = 1.000
+		TextLabel_8.Position = UDim2.new(0.087590903, 0, 0.265893131, 0)
+		TextLabel_8.Size = UDim2.new(0, 226, 0, 28)
+		TextLabel_8.Font = Enum.Font.FredokaOne
+		TextLabel_8.Text = "If someone tries to buy Fog/BunnyHop or any grief items exhibition hub will block it."
+		TextLabel_8.TextColor3 = Color3.fromRGB(68, 68, 68)
+		TextLabel_8.TextScaled = true
+		TextLabel_8.TextSize = 15.000
+		TextLabel_8.TextWrapped = true
+		TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+
+		partsdelete.Name = "partsdelete"
+		partsdelete.Parent = PlayerFrame
+		partsdelete.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		partsdelete.BackgroundTransparency = 1.000
+		partsdelete.Position = UDim2.new(0.576642275, 0, 0.0919504613, 0)
+		partsdelete.Size = UDim2.new(0, 72, 0, 50)
+		partsdelete.Font = Enum.Font.FredokaOne
+		partsdelete.Text = "Click"
+		partsdelete.TextColor3 = Color3.fromRGB(163, 0, 0)
+		partsdelete.TextSize = 18.000
+
+		walkspeedx.Name = "walkspeedx"
+		walkspeedx.Parent = PlayerFrame
+		walkspeedx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		walkspeedx.BackgroundTransparency = 1.000
+		walkspeedx.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		walkspeedx.Position = UDim2.new(0.525547445, 0, 0.143999994, 0)
+		walkspeedx.Size = UDim2.new(0, 45, 0, 42)
+		walkspeedx.Font = Enum.Font.FredokaOne
+		walkspeedx.Text = "16"
+		walkspeedx.TextColor3 = Color3.fromRGB(148, 148, 148)
+		walkspeedx.TextSize = 18.000
+
+		a_3.Name = "a"
+		a_3.Parent = Frame
+		a_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a_3.BackgroundTransparency = 1.000
+		a_3.Position = UDim2.new(0.383442283, 0, 0, 0)
+		a_3.Size = UDim2.new(0, 200, 0, 50)
+		a_3.ZIndex = 3
+		a_3.Font = Enum.Font.SourceSansItalic
+		a_3.Text = "Tower of Hell"
+		a_3.TextColor3 = Color3.fromRGB(67, 67, 67)
+		a_3.TextSize = 20.000
+
+		AutofarmFrame.Name = "AutofarmFrame"
+		AutofarmFrame.Parent = Frame
+		AutofarmFrame.Active = true
+		AutofarmFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		AutofarmFrame.BackgroundTransparency = 1.000
+		AutofarmFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		AutofarmFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		AutofarmFrame.Size = UDim2.new(0, 274, 0, 199)
+		AutofarmFrame.Visible = false
+		AutofarmFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		AutofarmFrame.ScrollBarThickness = 6
+
+		farmtrue.Name = "farmtrue"
+		farmtrue.Parent = AutofarmFrame
+		farmtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmtrue.BackgroundTransparency = 1.000
+		farmtrue.Position = UDim2.new(0.437956184, 0, -0.000925926026, 0)
+		farmtrue.Size = UDim2.new(0, 76, 0, 50)
+		farmtrue.Visible = false
+		farmtrue.Font = Enum.Font.FredokaOne
+		farmtrue.Text = "True"
+		farmtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		farmtrue.TextSize = 18.000
+
+		farmfalse.Name = "farmfalse"
+		farmfalse.Parent = AutofarmFrame
+		farmfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmfalse.BackgroundTransparency = 1.000
+		farmfalse.Position = UDim2.new(0.437956184, 0, -0.000925926026, 0)
+		farmfalse.Size = UDim2.new(0, 76, 0, 50)
+		farmfalse.Font = Enum.Font.FredokaOne
+		farmfalse.Text = "False"
+		farmfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		farmfalse.TextSize = 18.000
+
+		TextLabel_9.Parent = AutofarmFrame
+		TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.BackgroundTransparency = 1.000
+		TextLabel_9.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_9.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_9.Font = Enum.Font.FredokaOne
+		TextLabel_9.Text = "Autofarm:"
+		TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.TextSize = 18.000
+		TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_10.Parent = AutofarmFrame
+		TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.BackgroundTransparency = 1.000
+		TextLabel_10.Position = UDim2.new(0.0875912458, 0, 0.0919519514, 0)
+		TextLabel_10.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_10.Font = Enum.Font.FredokaOne
+		TextLabel_10.Text = "Coins Before:"
+		TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.TextSize = 18.000
+		TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_11.Parent = AutofarmFrame
+		TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.BackgroundTransparency = 1.000
+		TextLabel_11.Position = UDim2.new(0.0875912458, 0, 0.13824825, 0)
+		TextLabel_11.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_11.Font = Enum.Font.FredokaOne
+		TextLabel_11.Text = "Coins Now:"
+		TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.TextSize = 18.000
+		TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+		coinsbeforex.Name = "coinsbeforex"
+		coinsbeforex.Parent = AutofarmFrame
+		coinsbeforex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		coinsbeforex.BackgroundTransparency = 1.000
+		coinsbeforex.Position = UDim2.new(0.55109489, 0, 0.0919519514, 0)
+		coinsbeforex.Size = UDim2.new(0, 30, 0, 50)
+		coinsbeforex.Font = Enum.Font.FredokaOne
+		coinsbeforex.Text = "..."
+		coinsbeforex.TextColor3 = Color3.fromRGB(175, 175, 175)
+		coinsbeforex.TextSize = 18.000
+		coinsbeforex.TextXAlignment = Enum.TextXAlignment.Left
+
+		coinsnowx.Name = "coinsnowx"
+		coinsnowx.Parent = AutofarmFrame
+		coinsnowx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		coinsnowx.BackgroundTransparency = 1.000
+		coinsnowx.Position = UDim2.new(0.485401481, 0, 0.13824825, 0)
+		coinsnowx.Size = UDim2.new(0, 30, 0, 50)
+		coinsnowx.Font = Enum.Font.FredokaOne
+		coinsnowx.Text = "..."
+		coinsnowx.TextColor3 = Color3.fromRGB(175, 175, 175)
+		coinsnowx.TextSize = 18.000
+		coinsnowx.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_13.Parent = AutofarmFrame
+		TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.BackgroundTransparency = 1.000
+		TextLabel_13.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
+		TextLabel_13.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_13.Font = Enum.Font.FredokaOne
+		TextLabel_13.Text = "Status:"
+		TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.TextSize = 18.000
+		TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+		farmstatus.Name = "farmstatus"
+		farmstatus.Parent = AutofarmFrame
+		farmstatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmstatus.BackgroundTransparency = 1.000
+		farmstatus.Position = UDim2.new(0.32846716, 0, 0.0447297283, 0)
+		farmstatus.Size = UDim2.new(0, 30, 0, 50)
+		farmstatus.Font = Enum.Font.FredokaOne
+		farmstatus.Text = "Disabled."
+		farmstatus.TextColor3 = Color3.fromRGB(175, 175, 175)
+		farmstatus.TextSize = 15.000
+		farmstatus.TextXAlignment = Enum.TextXAlignment.Left
+
+		AutoBuyFrame.Name = "AutoBuyFrame"
+		AutoBuyFrame.Parent = Frame
+		AutoBuyFrame.Active = true
+		AutoBuyFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		AutoBuyFrame.BackgroundTransparency = 1.000
+		AutoBuyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		AutoBuyFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		AutoBuyFrame.Size = UDim2.new(0, 274, 0, 199)
+		AutoBuyFrame.Visible = false
+		AutoBuyFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		AutoBuyFrame.ScrollBarThickness = 6
+
+		TextLabel_14.Parent = AutoBuyFrame
+		TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.BackgroundTransparency = 1.000
+		TextLabel_14.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_14.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_14.Font = Enum.Font.FredokaOne
+		TextLabel_14.Text = "Auto Buy Crate 500$:"
+		TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.TextSize = 18.000
+		TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_15.Parent = AutoBuyFrame
+		TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.BackgroundTransparency = 1.000
+		TextLabel_15.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
+		TextLabel_15.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_15.Font = Enum.Font.FredokaOne
+		TextLabel_15.Text = "Creates Bought:"
+		TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.TextSize = 18.000
+		TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+		buycratefalse.Name = "buycratefalse"
+		buycratefalse.Parent = AutoBuyFrame
+		buycratefalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		buycratefalse.BackgroundTransparency = 1.000
+		buycratefalse.Position = UDim2.new(0.704379559, 0, -0.000925924629, 0)
+		buycratefalse.Size = UDim2.new(0, 76, 0, 50)
+		buycratefalse.Font = Enum.Font.FredokaOne
+		buycratefalse.Text = "False"
+		buycratefalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		buycratefalse.TextSize = 18.000
+
+		cratesbought.Name = "cratesbought"
+		cratesbought.Parent = AutoBuyFrame
+		cratesbought.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		cratesbought.BackgroundTransparency = 1.000
+		cratesbought.Position = UDim2.new(0.594890475, 0, 0.0447297245, 0)
+		cratesbought.Size = UDim2.new(0, 30, 0, 50)
+		cratesbought.Font = Enum.Font.FredokaOne
+		cratesbought.Text = "..."
+		cratesbought.TextColor3 = Color3.fromRGB(175, 175, 175)
+		cratesbought.TextSize = 18.000
+		cratesbought.TextXAlignment = Enum.TextXAlignment.Left
+
+		buycratetrue.Name = "buycratetrue"
+		buycratetrue.Parent = AutoBuyFrame
+		buycratetrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		buycratetrue.BackgroundTransparency = 1.000
+		buycratetrue.Position = UDim2.new(0.704379559, 0, -0.000925924629, 0)
+		buycratetrue.Size = UDim2.new(0, 76, 0, 50)
+		buycratetrue.Visible = false
+		buycratetrue.Font = Enum.Font.FredokaOne
+		buycratetrue.Text = "True"
+		buycratetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		buycratetrue.TextSize = 18.000
+
+		TextLabel_16.Parent = AutoBuyFrame
+		TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.BackgroundTransparency = 1.000
+		TextLabel_16.Position = UDim2.new(0.0839416087, 0, 0.091026023, 0)
+		TextLabel_16.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_16.Font = Enum.Font.FredokaOne
+		TextLabel_16.Text = "Auto Buy Invincibility 500$:"
+		TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.TextSize = 15.000
+		TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+		invinfalse.Name = "invinfalse"
+		invinfalse.Parent = AutoBuyFrame
+		invinfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		invinfalse.BackgroundTransparency = 1.000
+		invinfalse.Position = UDim2.new(0.704379559, 0, 0.0907407403, 0)
+		invinfalse.Size = UDim2.new(0, 76, 0, 50)
+		invinfalse.Font = Enum.Font.FredokaOne
+		invinfalse.Text = "False"
+		invinfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		invinfalse.TextSize = 18.000
+
+		invintrue.Name = "invintrue"
+		invintrue.Parent = AutoBuyFrame
+		invintrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		invintrue.BackgroundTransparency = 1.000
+		invintrue.Position = UDim2.new(0.704379559, 0, 0.0907407403, 0)
+		invintrue.Size = UDim2.new(0, 76, 0, 50)
+		invintrue.Visible = false
+		invintrue.Font = Enum.Font.FredokaOne
+		invintrue.Text = "True"
+		invintrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		invintrue.TextSize = 18.000
+
+		TextLabel_17.Parent = AutoBuyFrame
+		TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.BackgroundTransparency = 1.000
+		TextLabel_17.Position = UDim2.new(0.0839416087, 0, 0.137322307, 0)
+		TextLabel_17.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_17.Font = Enum.Font.FredokaOne
+		TextLabel_17.Text = "Auto Buy Speed 100$:"
+		TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.TextSize = 18.000
+		TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+
+		speedbuyfalse.Name = "speedbuyfalse"
+		speedbuyfalse.Parent = AutoBuyFrame
+		speedbuyfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		speedbuyfalse.BackgroundTransparency = 1.000
+		speedbuyfalse.Position = UDim2.new(0.704379559, 0, 0.137962967, 0)
+		speedbuyfalse.Size = UDim2.new(0, 76, 0, 50)
+		speedbuyfalse.Font = Enum.Font.FredokaOne
+		speedbuyfalse.Text = "False"
+		speedbuyfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		speedbuyfalse.TextSize = 18.000
+
+		speedbuytrue.Name = "speedbuytrue"
+		speedbuytrue.Parent = AutoBuyFrame
+		speedbuytrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		speedbuytrue.BackgroundTransparency = 1.000
+		speedbuytrue.Position = UDim2.new(0.704379559, 0, 0.137962967, 0)
+		speedbuytrue.Size = UDim2.new(0, 76, 0, 50)
+		speedbuytrue.Visible = false
+		speedbuytrue.Font = Enum.Font.FredokaOne
+		speedbuytrue.Text = "True"
+		speedbuytrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		speedbuytrue.TextSize = 18.000
+
+		TextLabel_18.Parent = AutoBuyFrame
+		TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.BackgroundTransparency = 1.000
+		TextLabel_18.Position = UDim2.new(0.0839416087, 0, 0.183618605, 0)
+		TextLabel_18.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_18.Font = Enum.Font.FredokaOne
+		TextLabel_18.Text = "Auto Buy Gravity 130$:"
+		TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.TextSize = 18.000
+		TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+
+		gravfalse.Name = "gravfalse"
+		gravfalse.Parent = AutoBuyFrame
+		gravfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		gravfalse.BackgroundTransparency = 1.000
+		gravfalse.Position = UDim2.new(0.718978107, 0, 0.183333337, 0)
+		gravfalse.Size = UDim2.new(0, 76, 0, 50)
+		gravfalse.Font = Enum.Font.FredokaOne
+		gravfalse.Text = "False"
+		gravfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		gravfalse.TextSize = 18.000
+
+		gravtrue.Name = "gravtrue"
+		gravtrue.Parent = AutoBuyFrame
+		gravtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		gravtrue.BackgroundTransparency = 1.000
+		gravtrue.Position = UDim2.new(0.718978107, 0, 0.183333337, 0)
+		gravtrue.Size = UDim2.new(0, 76, 0, 50)
+		gravtrue.Visible = false
+		gravtrue.Font = Enum.Font.FredokaOne
+		gravtrue.Text = "True"
+		gravtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		gravtrue.TextSize = 18.000
+
+		TextLabel_19.Parent = AutoBuyFrame
+		TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.BackgroundTransparency = 1.000
+		TextLabel_19.Position = UDim2.new(0.0839416087, 0, 0.229914904, 0)
+		TextLabel_19.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_19.Font = Enum.Font.FredokaOne
+		TextLabel_19.Text = "Auto Buy Fog 150$:"
+		TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.TextSize = 18.000
+		TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+
+		fogfalse.Name = "fogfalse"
+		fogfalse.Parent = AutoBuyFrame
+		fogfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		fogfalse.BackgroundTransparency = 1.000
+		fogfalse.Position = UDim2.new(0.635036469, 0, 0.230555564, 0)
+		fogfalse.Size = UDim2.new(0, 76, 0, 50)
+		fogfalse.Font = Enum.Font.FredokaOne
+		fogfalse.Text = "False"
+		fogfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		fogfalse.TextSize = 18.000
+
+		fogtrue.Name = "fogtrue"
+		fogtrue.Parent = AutoBuyFrame
+		fogtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		fogtrue.BackgroundTransparency = 1.000
+		fogtrue.Position = UDim2.new(0.635036469, 0, 0.230555564, 0)
+		fogtrue.Size = UDim2.new(0, 76, 0, 50)
+		fogtrue.Visible = false
+		fogtrue.Font = Enum.Font.FredokaOne
+		fogtrue.Text = "True"
+		fogtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		fogtrue.TextSize = 18.000
+
+		TextLabel_20.Parent = AutoBuyFrame
+		TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_20.BackgroundTransparency = 1.000
+		TextLabel_20.Position = UDim2.new(0.0839416087, 0, 0.276211202, 0)
+		TextLabel_20.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_20.Font = Enum.Font.FredokaOne
+		TextLabel_20.Text = "Auto Buy Negative 150$:"
+		TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_20.TextSize = 18.000
+		TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+
+		negativefalse.Name = "negativefalse"
+		negativefalse.Parent = AutoBuyFrame
+		negativefalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		negativefalse.BackgroundTransparency = 1.000
+		negativefalse.Position = UDim2.new(0.748175144, 0, 0.276851863, 0)
+		negativefalse.Size = UDim2.new(0, 76, 0, 50)
+		negativefalse.Font = Enum.Font.FredokaOne
+		negativefalse.Text = "False"
+		negativefalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		negativefalse.TextSize = 18.000
+
+		negativetrue.Name = "negativetrue"
+		negativetrue.Parent = AutoBuyFrame
+		negativetrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		negativetrue.BackgroundTransparency = 1.000
+		negativetrue.Position = UDim2.new(0.748175144, 0, 0.276851863, 0)
+		negativetrue.Size = UDim2.new(0, 76, 0, 50)
+		negativetrue.Visible = false
+		negativetrue.Font = Enum.Font.FredokaOne
+		negativetrue.Text = "True"
+		negativetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		negativetrue.TextSize = 18.000
+
+		TextLabel_21.Parent = AutoBuyFrame
+		TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.BackgroundTransparency = 1.000
+		TextLabel_21.Position = UDim2.new(0.0839416087, 0, 0.322507501, 0)
+		TextLabel_21.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_21.Font = Enum.Font.FredokaOne
+		TextLabel_21.Text = "Auto Buy Lengthen 150$:"
+		TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.TextSize = 15.000
+		TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
+
+		lengthfalse.Name = "lengthfalse"
+		lengthfalse.Parent = AutoBuyFrame
+		lengthfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lengthfalse.BackgroundTransparency = 1.000
+		lengthfalse.Position = UDim2.new(0.660583913, 0, 0.323148161, 0)
+		lengthfalse.Size = UDim2.new(0, 76, 0, 50)
+		lengthfalse.Font = Enum.Font.FredokaOne
+		lengthfalse.Text = "False"
+		lengthfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		lengthfalse.TextSize = 18.000
+
+		lengthtrue.Name = "lengthtrue"
+		lengthtrue.Parent = AutoBuyFrame
+		lengthtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lengthtrue.BackgroundTransparency = 1.000
+		lengthtrue.Position = UDim2.new(0.660583913, 0, 0.323148161, 0)
+		lengthtrue.Size = UDim2.new(0, 76, 0, 50)
+		lengthtrue.Visible = false
+		lengthtrue.Font = Enum.Font.FredokaOne
+		lengthtrue.Text = "True"
+		lengthtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		lengthtrue.TextSize = 18.000
+
+		TextLabel_22.Parent = AutoBuyFrame
+		TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.BackgroundTransparency = 1.000
+		TextLabel_22.Position = UDim2.new(0.0839416087, 0, 0.368803799, 0)
+		TextLabel_22.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_22.Font = Enum.Font.FredokaOne
+		TextLabel_22.Text = "Auto Buy Extra Time 50$:"
+		TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.TextSize = 15.000
+		TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
+
+		timefalse.Name = "timefalse"
+		timefalse.Parent = AutoBuyFrame
+		timefalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		timefalse.BackgroundTransparency = 1.000
+		timefalse.Position = UDim2.new(0.704379559, 0, 0.368518531, 0)
+		timefalse.Size = UDim2.new(0, 76, 0, 50)
+		timefalse.Font = Enum.Font.FredokaOne
+		timefalse.Text = "False"
+		timefalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		timefalse.TextSize = 18.000
+
+		timetrue.Name = "timetrue"
+		timetrue.Parent = AutoBuyFrame
+		timetrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		timetrue.BackgroundTransparency = 1.000
+		timetrue.Position = UDim2.new(0.704379559, 0, 0.368518531, 0)
+		timetrue.Size = UDim2.new(0, 76, 0, 50)
+		timetrue.Visible = false
+		timetrue.Font = Enum.Font.FredokaOne
+		timetrue.Text = "True"
+		timetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		timetrue.TextSize = 18.000
+
+		SettingsFrame.Name = "SettingsFrame"
+		SettingsFrame.Parent = Frame
+		SettingsFrame.Active = true
+		SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SettingsFrame.BackgroundTransparency = 1.000
+		SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		SettingsFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		SettingsFrame.Size = UDim2.new(0, 274, 0, 199)
+		SettingsFrame.Visible = false
+		SettingsFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		SettingsFrame.ScrollBarThickness = 6
+
+		TextLabel_23.Parent = SettingsFrame
+		TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.BackgroundTransparency = 1.000
+		TextLabel_23.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_23.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_23.Font = Enum.Font.FredokaOne
+		TextLabel_23.Text = "UI Shadow:"
+		TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.TextSize = 18.000
+		TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
+
+		shadowfalse.Name = "shadowfalse"
+		shadowfalse.Parent = SettingsFrame
+		shadowfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		shadowfalse.BackgroundTransparency = 1.000
+		shadowfalse.Position = UDim2.new(0.470802903, 0, -0.00092592591, 0)
+		shadowfalse.Size = UDim2.new(0, 76, 0, 50)
+		shadowfalse.Visible = false
+		shadowfalse.Font = Enum.Font.FredokaOne
+		shadowfalse.Text = "False"
+		shadowfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		shadowfalse.TextSize = 18.000
+
+		shadowtrue.Name = "shadowtrue"
+		shadowtrue.Parent = SettingsFrame
+		shadowtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		shadowtrue.BackgroundTransparency = 1.000
+		shadowtrue.Position = UDim2.new(0.470802903, 0, -0.00092592591, 0)
+		shadowtrue.Size = UDim2.new(0, 76, 0, 50)
+		shadowtrue.Font = Enum.Font.FredokaOne
+		shadowtrue.Text = "True"
+		shadowtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		shadowtrue.TextSize = 18.000
+
+		TextLabel_24.Parent = SettingsFrame
+		TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.BackgroundTransparency = 1.000
+		TextLabel_24.Position = UDim2.new(0.0839416087, 0, 0.0475075021, 0)
+		TextLabel_24.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_24.Font = Enum.Font.FredokaOne
+		TextLabel_24.Text = "Self Destruct"
+		TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.TextSize = 18.000
+		TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+
+		selfdestruct.Name = "selfdestruct"
+		selfdestruct.Parent = SettingsFrame
+		selfdestruct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		selfdestruct.BackgroundTransparency = 1.000
+		selfdestruct.Position = UDim2.new(0.485401452, 0, 0.0475060716, 0)
+		selfdestruct.Size = UDim2.new(0, 72, 0, 50)
+		selfdestruct.Font = Enum.Font.FredokaOne
+		selfdestruct.Text = "Click"
+		selfdestruct.TextColor3 = Color3.fromRGB(163, 0, 0)
+		selfdestruct.TextSize = 18.000
+
+		TextLabel_25.Parent = SettingsFrame
+		TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.BackgroundTransparency = 1.000
+		TextLabel_25.Position = UDim2.new(0.0839416087, 0, 0.0938037932, 0)
+		TextLabel_25.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_25.Font = Enum.Font.FredokaOne
+		TextLabel_25.Text = "Current Version:"
+		TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.TextSize = 18.000
+		TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
+
+		vers_2.Name = "vers"
+		vers_2.Parent = SettingsFrame
+		vers_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		vers_2.BackgroundTransparency = 1.000
+		vers_2.Position = UDim2.new(0.613138616, 0, 0.0938037932, 0)
+		vers_2.Size = UDim2.new(0, 30, 0, 50)
+		vers_2.Font = Enum.Font.FredokaOne
+		vers_2.Text = "b0.01"
+		vers_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+		vers_2.TextSize = 18.000
+		vers_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_26.Parent = SettingsFrame
+		TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_26.BackgroundTransparency = 1.000
+		TextLabel_26.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_26.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_26.Font = Enum.Font.FredokaOne
+		TextLabel_26.Text = "Last Updated:"
+		TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_26.TextSize = 18.000
+		TextLabel_26.TextXAlignment = Enum.TextXAlignment.Left
+
+		lastupdat.Name = "lastupdat"
+		lastupdat.Parent = SettingsFrame
+		lastupdat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lastupdat.BackgroundTransparency = 1.000
+		lastupdat.Position = UDim2.new(0.532846689, 0, 0.140100092, 0)
+		lastupdat.Size = UDim2.new(0, 30, 0, 50)
+		lastupdat.Font = Enum.Font.FredokaOne
+		lastupdat.Text = "Jul 9th 2023"
+		lastupdat.TextColor3 = Color3.fromRGB(178, 178, 178)
+		lastupdat.TextSize = 18.000
+		lastupdat.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_27.Parent = SettingsFrame
+		TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.BackgroundTransparency = 1.000
+		TextLabel_27.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_27.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_27.Font = Enum.Font.FredokaOne
+		TextLabel_27.Text = "Creator:"
+		TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.TextSize = 18.000
+		TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_28.Parent = SettingsFrame
+		TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_28.BackgroundTransparency = 1.000
+		TextLabel_28.Position = UDim2.new(0.397810191, 0, 0.18639639, 0)
+		TextLabel_28.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_28.Font = Enum.Font.FredokaOne
+		TextLabel_28.Text = "missayat on Discord"
+		TextLabel_28.TextColor3 = Color3.fromRGB(178, 178, 178)
+		TextLabel_28.TextSize = 18.000
+		TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
+
+		damn.Name = "damn"
+		damn.Parent = Frame
+		damn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn.BackgroundTransparency = 1.000
+		damn.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn.Size = UDim2.new(0, 894, 0, 595)
+		damn.ZIndex = -2
+		damn.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		damn2.Name = "damn2"
+		damn2.Parent = Frame
+		damn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn2.BackgroundTransparency = 1.000
+		damn2.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn2.Size = UDim2.new(0, 894, 0, 595)
+		damn2.ZIndex = -2
+		damn2.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		CatergoryFrame.Name = "CatergoryFrame"
+		CatergoryFrame.Parent = Frame
+		CatergoryFrame.Active = true
+		CatergoryFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		CatergoryFrame.BackgroundTransparency = 1.000
+		CatergoryFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		CatergoryFrame.Position = UDim2.new(0.0370370373, 0, 0.233333334, 0)
+		CatergoryFrame.Size = UDim2.new(0, 141, 0, 198)
+		CatergoryFrame.ZIndex = 5
+		CatergoryFrame.ScrollBarThickness = 5
+
+		Player.Name = "Player"
+		Player.Parent = CatergoryFrame
+		Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Player.BackgroundTransparency = 1.000
+		Player.Position = UDim2.new(0.0997079611, 0, -0.0111110974, 0)
+		Player.Size = UDim2.new(0, 106, 0, 41)
+		Player.ZIndex = 5
+		Player.Font = Enum.Font.FredokaOne
+		Player.Text = "•    Player"
+		Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Player.TextSize = 14.000
+		Player.TextWrapped = true
+		Player.TextXAlignment = Enum.TextXAlignment.Left
+
+		Autofarm.Name = "Autofarm"
+		Autofarm.Parent = CatergoryFrame
+		Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Autofarm.BackgroundTransparency = 1.000
+		Autofarm.Position = UDim2.new(0.0997079611, 0, 0.100000001, -20)
+		Autofarm.Size = UDim2.new(0, 106, 0, 41)
+		Autofarm.ZIndex = 5
+		Autofarm.Font = Enum.Font.FredokaOne
+		Autofarm.Text = "•    Autofarm"
+		Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Autofarm.TextSize = 14.000
+		Autofarm.TextWrapped = true
+		Autofarm.TextXAlignment = Enum.TextXAlignment.Left
+
+		Inventoryx.Name = "Inventoryx"
+		Inventoryx.Parent = CatergoryFrame
+		Inventoryx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Inventoryx.BackgroundTransparency = 1.000
+		Inventoryx.Position = UDim2.new(0.0997079611, 0, 0.170000002, -20)
+		Inventoryx.Size = UDim2.new(0, 106, 0, 41)
+		Inventoryx.ZIndex = 5
+		Inventoryx.Font = Enum.Font.FredokaOne
+		Inventoryx.Text = "•    AutoBuy"
+		Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Inventoryx.TextSize = 14.000
+		Inventoryx.TextWrapped = true
+		Inventoryx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Teleportx.Name = "Teleportx"
+		Teleportx.Parent = CatergoryFrame
+		Teleportx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Teleportx.BackgroundTransparency = 1.000
+		Teleportx.Position = UDim2.new(0.0997079611, 0, 0.318148136, -20)
+		Teleportx.Size = UDim2.new(0, 106, 0, 41)
+		Teleportx.ZIndex = 5
+		Teleportx.Font = Enum.Font.FredokaOne
+		Teleportx.Text = "•    Teleport"
+		Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Teleportx.TextSize = 14.000
+		Teleportx.TextWrapped = true
+		Teleportx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Settingsx.Name = "Settingsx"
+		Settingsx.Parent = CatergoryFrame
+		Settingsx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Settingsx.BackgroundTransparency = 1.000
+		Settingsx.Position = UDim2.new(0.0997079611, 0, 0.393999994, -21)
+		Settingsx.Size = UDim2.new(0, 106, 0, 41)
+		Settingsx.ZIndex = 5
+		Settingsx.Font = Enum.Font.FredokaOne
+		Settingsx.Text = "•    Settings"
+		Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Settingsx.TextSize = 14.000
+		Settingsx.TextWrapped = true
+		Settingsx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Otherx.Name = "Otherx"
+		Otherx.Parent = CatergoryFrame
+		Otherx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Otherx.BackgroundTransparency = 1.000
+		Otherx.Position = UDim2.new(0.0997079611, 0, 0.20740737, 0)
+		Otherx.Size = UDim2.new(0, 106, 0, 41)
+		Otherx.ZIndex = 5
+		Otherx.Font = Enum.Font.FredokaOne
+		Otherx.Text = "•    Other"
+		Otherx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Otherx.TextSize = 14.000
+		Otherx.TextWrapped = true
+		Otherx.TextXAlignment = Enum.TextXAlignment.Left
+
+		ImageLabel.Parent = Frame
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.BackgroundTransparency = 1.000
+		ImageLabel.Position = UDim2.new(0.0729848146, 0, 0.535185158, 0)
+		ImageLabel.Rotation = -90.000
+		ImageLabel.Size = UDim2.new(0, 100, 0, 137)
+		ImageLabel.ZIndex = 3
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=10099621336"
+
+		TeleportFrame.Name = "TeleportFrame"
+		TeleportFrame.Parent = Frame
+		TeleportFrame.Active = true
+		TeleportFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TeleportFrame.BackgroundTransparency = 1.000
+		TeleportFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TeleportFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		TeleportFrame.Size = UDim2.new(0, 274, 0, 199)
+		TeleportFrame.Visible = false
+		TeleportFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		TeleportFrame.ScrollBarThickness = 6
+
+		playertp.Name = "playertp"
+		playertp.Parent = TeleportFrame
+		playertp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		playertp.BackgroundTransparency = 1.000
+		playertp.Position = UDim2.new(0.0182480738, 0, 0.0428764001, 0)
+		playertp.Size = UDim2.new(0, 72, 0, 50)
+		playertp.Font = Enum.Font.FredokaOne
+		playertp.Text = "Click"
+		playertp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		playertp.TextSize = 18.000
+
+		TextLabel_29.Parent = TeleportFrame
+		TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.BackgroundTransparency = 1.000
+		TextLabel_29.Position = UDim2.new(0.0839416087, 0, 0.00213710219, 0)
+		TextLabel_29.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_29.Font = Enum.Font.FredokaOne
+		TextLabel_29.Text = "Player:"
+		TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.TextSize = 18.000
+		TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
+
+		targetnametp.Name = "targetnametp"
+		targetnametp.Parent = TeleportFrame
+		targetnametp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		targetnametp.BackgroundTransparency = 1.000
+		targetnametp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		targetnametp.Position = UDim2.new(0.620000005, -79, 0.0214814618, -10)
+		targetnametp.Size = UDim2.new(0, 158, 0, 32)
+		targetnametp.Font = Enum.Font.FredokaOne
+		targetnametp.Text = "--type name here--"
+		targetnametp.TextColor3 = Color3.fromRGB(178, 178, 178)
+		targetnametp.TextSize = 13.000
+		targetnametp.TextXAlignment = Enum.TextXAlignment.Left
+
+		OtherFrame.Name = "OtherFrame"
+		OtherFrame.Parent = Frame
+		OtherFrame.Active = true
+		OtherFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		OtherFrame.BackgroundTransparency = 1.000
+		OtherFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		OtherFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		OtherFrame.Size = UDim2.new(0, 274, 0, 199)
+		OtherFrame.Visible = false
+		OtherFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		OtherFrame.ScrollBarThickness = 6
+
+		tptoolgiv.Name = "tptoolgiv"
+		tptoolgiv.Parent = OtherFrame
+		tptoolgiv.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tptoolgiv.BackgroundTransparency = 1.000
+		tptoolgiv.Position = UDim2.new(0.627737164, 0, -0.000642091036, 0)
+		tptoolgiv.Size = UDim2.new(0, 72, 0, 50)
+		tptoolgiv.Font = Enum.Font.FredokaOne
+		tptoolgiv.Text = "Click"
+		tptoolgiv.TextColor3 = Color3.fromRGB(163, 0, 0)
+		tptoolgiv.TextSize = 18.000
+
+		TextLabel_30.Parent = OtherFrame
+		TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_30.BackgroundTransparency = 1.000
+		TextLabel_30.Position = UDim2.new(0.0839416087, 0, 0.0456556454, 0)
+		TextLabel_30.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_30.Font = Enum.Font.FredokaOne
+		TextLabel_30.Text = "Say Hi:"
+		TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_30.TextSize = 18.000
+		TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_31.Parent = OtherFrame
+		TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.BackgroundTransparency = 1.000
+		TextLabel_31.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_31.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_31.Font = Enum.Font.FredokaOne
+		TextLabel_31.Text = "Give Teleport Tool:"
+		TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.TextSize = 18.000
+		TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
+
+		sayhi.Name = "sayhi"
+		sayhi.Parent = OtherFrame
+		sayhi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		sayhi.BackgroundTransparency = 1.000
+		sayhi.Position = UDim2.new(0.313868552, 0, 0.0447282791, 0)
+		sayhi.Size = UDim2.new(0, 72, 0, 50)
+		sayhi.Font = Enum.Font.FredokaOne
+		sayhi.Text = "Click"
+		sayhi.TextColor3 = Color3.fromRGB(163, 0, 0)
+		sayhi.TextSize = 18.000
+
+		minimized.Name = "minimized"
+		minimized.Parent = EXHIBITION
+		minimized.AnchorPoint = Vector2.new(0.5, 0.5)
+		minimized.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		minimized.BackgroundTransparency = 1.000
+		minimized.Position = UDim2.new(0.789142609, 0, 0.853948474, 0)
+		minimized.Size = UDim2.new(0, 140, 0, 75)
+		minimized.Visible = false
+		minimized.ZIndex = 99
+		minimized.Image = "rbxassetid://3570695787"
+		minimized.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		minimized.ScaleType = Enum.ScaleType.Slice
+		minimized.SliceCenter = Rect.new(100, 100, 100, 100)
+		minimized.SliceScale = 0.040
+		minimized.Active = true
+		minimized.Draggable = true
+
+		TextLabel_32.Parent = minimized
+		TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.BackgroundTransparency = 1.000
+		TextLabel_32.Position = UDim2.new(-0.214285716, 0, 0, 0)
+		TextLabel_32.Size = UDim2.new(0, 200, 0, 44)
+		TextLabel_32.ZIndex = 99
+		TextLabel_32.Font = Enum.Font.FredokaOne
+		TextLabel_32.Text = "exhibition hub"
+		TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.TextSize = 14.000
+
+		open.Name = "open"
+		open.Parent = minimized
+		open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		open.BackgroundTransparency = 1.000
+		open.Position = UDim2.new(0.114285715, 0, 0.575936675, 0)
+		open.Size = UDim2.new(0, 107, 0, 26)
+		open.ZIndex = 99
+		open.Font = Enum.Font.FredokaOne
+		open.Text = "Open"
+		open.TextColor3 = Color3.fromRGB(116, 116, 116)
+		open.TextSize = 14.000
+
+		minimized_2.Name = "minimized"
+		minimized_2.Parent = minimized
+		minimized_2.AnchorPoint = Vector2.new(0.5, 0.5)
+		minimized_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		minimized_2.BackgroundTransparency = 1.000
+		minimized_2.Position = UDim2.new(0.419516414, 0, 0.363590896, 0)
+		minimized_2.Size = UDim2.new(0, 135, 0, 71)
+		minimized_2.ZIndex = 98
+		minimized_2.Image = "rbxassetid://3570695787"
+		minimized_2.ImageColor3 = Color3.fromRGB(48, 48, 48)
+		minimized_2.ScaleType = Enum.ScaleType.Slice
+		minimized_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		minimized_2.SliceScale = 0.040
+
+		confirm.Name = "confirm"
+		confirm.Parent = EXHIBITION
+		confirm.AnchorPoint = Vector2.new(0.5, 0.5)
+		confirm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		confirm.BackgroundTransparency = 1.000
+		confirm.Position = UDim2.new(0.5, 0, 0.5, 0)
+		confirm.Size = UDim2.new(0, 233, 0, 149)
+		confirm.Visible = false
+		confirm.ZIndex = 200
+		confirm.Image = "rbxassetid://3570695787"
+		confirm.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		confirm.ScaleType = Enum.ScaleType.Slice
+		confirm.SliceCenter = Rect.new(100, 100, 100, 100)
+		confirm.SliceScale = 0.040
+
+		TextLabel_33.Parent = confirm
+		TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.BackgroundTransparency = 1.000
+		TextLabel_33.Position = UDim2.new(0.0686695278, 0, 0.228187919, 0)
+		TextLabel_33.Size = UDim2.new(0, 200, 0, 33)
+		TextLabel_33.ZIndex = 200
+		TextLabel_33.Font = Enum.Font.FredokaOne
+		TextLabel_33.Text = "Are you sure you would like to self destruct?"
+		TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.TextScaled = true
+		TextLabel_33.TextSize = 18.000
+		TextLabel_33.TextWrapped = true
+
+		yesxx.Name = "yesxx"
+		yesxx.Parent = confirm
+		yesxx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		yesxx.BackgroundTransparency = 1.000
+		yesxx.Position = UDim2.new(0.0686695278, 0, 0.617449701, 0)
+		yesxx.Size = UDim2.new(0, 87, 0, 48)
+		yesxx.ZIndex = 200
+		yesxx.Font = Enum.Font.FredokaOne
+		yesxx.Text = "Yes"
+		yesxx.TextColor3 = Color3.fromRGB(17, 170, 0)
+		yesxx.TextSize = 19.000
+
+		yesxx_2.Name = "yesxx"
+		yesxx_2.Parent = confirm
+		yesxx_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		yesxx_2.BackgroundTransparency = 1.000
+		yesxx_2.Position = UDim2.new(0.553648055, 0, 0.617449701, 0)
+		yesxx_2.Size = UDim2.new(0, 87, 0, 48)
+		yesxx_2.ZIndex = 200
+		yesxx_2.Font = Enum.Font.FredokaOne
+		yesxx_2.Text = "No"
+		yesxx_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+		yesxx_2.TextSize = 19.000
+
+		asdasd.Name = "asdasd"
+		asdasd.Parent = confirm
+		asdasd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		asdasd.BackgroundTransparency = 1.000
+		asdasd.Position = UDim2.new(-0.049882751, 0, -0.0664480329, 0)
+		asdasd.Size = UDim2.new(0, 230, 0, 144)
+		asdasd.ZIndex = 199
+		asdasd.Image = "rbxassetid://3570695787"
+		asdasd.ImageColor3 = Color3.fromRGB(53, 53, 53)
+		asdasd.ScaleType = Enum.ScaleType.Slice
+		asdasd.SliceCenter = Rect.new(100, 100, 100, 100)
+		asdasd.SliceScale = 0.040
+
+		Changelog.Name = "Changelog"
+		Changelog.Parent = EXHIBITION
+		Changelog.AnchorPoint = Vector2.new(0.5, 0.5)
+		Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Changelog.BackgroundTransparency = 1.000
+		Changelog.Position = UDim2.new(0.5, 0, 2, 0)
+		Changelog.Size = UDim2.new(0, 400, 0, 238)
+		Changelog.Image = "rbxassetid://3570695787"
+		Changelog.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Changelog.ScaleType = Enum.ScaleType.Slice
+		Changelog.SliceCenter = Rect.new(100, 100, 100, 100)
+		Changelog.SliceScale = 0.050
+
+		f.Name = "f"
+		f.Parent = Changelog
+		f.AnchorPoint = Vector2.new(0.5, 0.5)
+		f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		f.BackgroundTransparency = 1.000
+		f.Position = UDim2.new(0.458878219, 0, 0.436974794, 0)
+		f.Size = UDim2.new(0, 392, 0, 233)
+		f.ZIndex = -2
+		f.Image = "rbxassetid://3570695787"
+		f.ImageColor3 = Color3.fromRGB(38, 38, 38)
+		f.ScaleType = Enum.ScaleType.Slice
+		f.SliceCenter = Rect.new(100, 100, 100, 100)
+		f.SliceScale = 0.050
+
+		dam_3.Name = "dam"
+		dam_3.Parent = Changelog
+		dam_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_3.BackgroundTransparency = 1.000
+		dam_3.Position = UDim2.new(-0.427568048, 0, -0.507773995, 0)
+		dam_3.Size = UDim2.new(0, 743, 0, 495)
+		dam_3.ZIndex = -3
+		dam_3.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		dam_4.Name = "dam"
+		dam_4.Parent = Changelog
+		dam_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_4.BackgroundTransparency = 1.000
+		dam_4.Position = UDim2.new(-0.427568048, 0, -0.507773995, 0)
+		dam_4.Size = UDim2.new(0, 743, 0, 495)
+		dam_4.ZIndex = -3
+		dam_4.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		TextLabel_34.Parent = Changelog
+		TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_34.BackgroundTransparency = 1.000
+		TextLabel_34.Position = UDim2.new(0.597500086, 0, 0, 0)
+		TextLabel_34.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_34.Font = Enum.Font.FredokaOne
+		TextLabel_34.Text = "exhibition hub"
+		TextLabel_34.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_34.TextSize = 14.000
+
+		TextLabel_35.Parent = Changelog
+		TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_35.BackgroundTransparency = 1.000
+		TextLabel_35.Position = UDim2.new(-0.0624999255, 0, 0, 0)
+		TextLabel_35.Size = UDim2.new(0, 217, 0, 50)
+		TextLabel_35.Font = Enum.Font.FredokaOne
+		TextLabel_35.Text = "Changelog:      b0.01"
+		TextLabel_35.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_35.TextSize = 14.000
+
+		changelogframe.Name = "changelog frame"
+		changelogframe.Parent = Changelog
+		changelogframe.Active = true
+		changelogframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changelogframe.BackgroundTransparency = 1.000
+		changelogframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		changelogframe.Position = UDim2.new(0.0649999976, 0, 0.226890758, 0)
+		changelogframe.Size = UDim2.new(0, 341, 0, 141)
+		changelogframe.CanvasSize = UDim2.new(0, 0, 4, 0)
+		changelogframe.ScrollBarThickness = 5
+
+		plus.Name = "plus"
+		plus.Parent = changelogframe
+		plus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus.BackgroundTransparency = 1.000
+		plus.Position = UDim2.new(0.0974999964, 0, -0.00420166645, 0)
+		plus.Size = UDim2.new(0, 18, 0, 44)
+		plus.Font = Enum.Font.FredokaOne
+		plus.Text = "!"
+		plus.TextColor3 = Color3.fromRGB(0, 100, 193)
+		plus.TextSize = 19.000
+
+		changed.Name = "changed"
+		changed.Parent = changelogframe
+		changed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed.BackgroundTransparency = 1.000
+		changed.Position = UDim2.new(0.217500001, 0, 0.0441176817, 0)
+		changed.Size = UDim2.new(0, 18, 0, 44)
+		changed.Font = Enum.Font.FredokaOne
+		changed.Text = "Released to the public."
+		changed.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed.TextSize = 15.000
+		changed.TextXAlignment = Enum.TextXAlignment.Left
+
+		changed_2.Name = "changed"
+		changed_2.Parent = changelogframe
+		changed_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_2.BackgroundTransparency = 1.000
+		changed_2.Position = UDim2.new(0.217500001, 0, -0.00420166645, 0)
+		changed_2.Size = UDim2.new(0, 18, 0, 44)
+		changed_2.Font = Enum.Font.FredokaOne
+		changed_2.Text = "Compatible with Tower of Hell game."
+		changed_2.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_2.TextSize = 15.000
+		changed_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_2.Name = "plus"
+		plus_2.Parent = changelogframe
+		plus_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_2.BackgroundTransparency = 1.000
+		plus_2.Position = UDim2.new(0.099999994, 0, 0.0441176854, 0)
+		plus_2.Size = UDim2.new(0, 18, 0, 44)
+		plus_2.Font = Enum.Font.FredokaOne
+		plus_2.Text = "+"
+		plus_2.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_2.TextSize = 19.000
+
+		okx.Name = "okx"
+		okx.Parent = Changelog
+		okx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		okx.BackgroundTransparency = 1.000
+		okx.Position = UDim2.new(0.342500001, 0, 0.859243691, 0)
+		okx.Size = UDim2.new(0, 125, 0, 16)
+		okx.Font = Enum.Font.FredokaOne
+		okx.Text = "OK"
+		okx.TextColor3 = Color3.fromRGB(4, 217, 0)
+		okx.TextScaled = true
+		okx.TextSize = 14.000
+		okx.TextWrapped = true
+
+		-- Scripts:
+
+		local function VZTVH_fake_script() -- welcome.LocalScript 
+			local script = Instance.new('LocalScript', welcome)
+
+			wait(2.8)
+
+			script.Parent.Text = "W"
+			wait(0.1)
+			script.Parent.Text = "We"
+			wait(0.1)
+			script.Parent.Text = "Wel"
+			wait(0.1)
+			script.Parent.Text = "Welc"
+			wait(0.1)
+			script.Parent.Text = "Welco"
+			wait(0.1)
+			script.Parent.Text = "Welcom"
+			wait(0.1)
+			script.Parent.Text = "Welcome"
+			wait(0.1)
+		end
+		coroutine.wrap(VZTVH_fake_script)()
+		local function FEWRS_fake_script() -- title.LocalScript 
+			local script = Instance.new('LocalScript', title)
+
+			repeat
+				wait()
+			until
+			script.Parent.Parent.welcome.Text == "Welcome"
+
+			wait(1)
+
+			repeat
+				script.Parent.Parent.lliinneee.TextTransparency -= 0.03
+				script.Parent.TextTransparency -= 0.03
+				wait(0.01)
+			until
+			script.Parent.TextTransparency <= 0
+
+			wait(5)
+
+
+			repeat
+				script.Parent.TextTransparency += 0.03
+				script.Parent.Parent.welcome.TextTransparency += 0.03
+				script.Parent.Parent.lliinneee.TextTransparency += 0.03
+				wait(0.01)
+			until
+			script.Parent.TextTransparency >= 1
+
+			wait(0.01)
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Please Wait";
+				Text = " ";
+				Duration = 3.27;
+			})
+			wait(0.4)
+			script.Parent.Parent.Parent.loading.Visible = false
+
+			pcall(function()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+			end)
+
+			wait(1.9)
+			wait(0.4)
+			script.Parent.Parent.Parent.Changelog:TweenPosition(UDim2.new(0.5, 0,0.5, 0))
+		end
+		coroutine.wrap(FEWRS_fake_script)()
+		local function SVFPB_fake_script() -- title.Script 
+			local script = Instance.new('Script', title)
+
+			local RS = game:GetService("RunService")
+
+			local rainbow = script.Parent
+			local grad = rainbow.UIGradient
+
+			local counter = 0       
+			local w = math.pi / 6 
+			local CS = {}         
+			local num = 15 			
+			local frames = 0	
+
+			local count = 0
+			local cskCache = {}
+
+			while true do
+				for i = 0, num do
+					local c = Color3.fromRGB(127 * math.sin(w*i + counter) + 128, 127 * math.sin(w*i + 2 * math.pi/3 + counter) + 128, 127*math.sin(w*i + 4*math.pi/3 + counter) + 128)
+					table.insert(CS, i+1, ColorSequenceKeypoint.new(i/num, c))
+				end
+				local newCS = ColorSequence.new(CS)
+
+				if #cskCache > 0 then
+					if newCS == cskCache[1] then
+						CS = {}
+						break
+					end
+				end
+				table.insert(cskCache, newCS)
+
+				CS = {}
+
+				counter = counter + math.pi/40
+				if (counter >= math.pi * 2) then counter = 0 end	
+			end
+
+			local finalCacheCt = #cskCache
+			local rotation = 1
+
+			RS.Heartbeat:Connect(function()	
+				if math.fmod(frames, 2) == 0 then
+					grad.Color = cskCache[rotation]			
+					if rotation >= #cskCache then rotation = 0 end
+					rotation = rotation + 1				
+				end
+				if frames >= 1000 then frames = 0 end
+				frames = frames + 1
+			end)
+		end
+		coroutine.wrap(SVFPB_fake_script)()
+		local function FOJIPK_fake_script() -- lliinneee.Script 
+			local script = Instance.new('Script', lliinneee)
+
+			local RS = game:GetService("RunService")
+
+			local rainbow = script.Parent
+			local grad = rainbow.UIGradient
+
+			local counter = 0       
+			local w = math.pi / 6 
+			local CS = {}         
+			local num = 15 			
+			local frames = 0	
+
+			local count = 0
+			local cskCache = {}
+
+			while true do
+				for i = 0, num do
+					local c = Color3.fromRGB(127 * math.sin(w*i + counter) + 128, 127 * math.sin(w*i + 2 * math.pi/3 + counter) + 128, 127*math.sin(w*i + 4*math.pi/3 + counter) + 128)
+					table.insert(CS, i+1, ColorSequenceKeypoint.new(i/num, c))
+				end
+				local newCS = ColorSequence.new(CS)
+
+				if #cskCache > 0 then
+					if newCS == cskCache[1] then
+						CS = {}
+						break
+					end
+				end
+				table.insert(cskCache, newCS)
+
+				CS = {}
+
+				counter = counter + math.pi/40
+				if (counter >= math.pi * 2) then counter = 0 end	
+			end
+
+			local finalCacheCt = #cskCache
+			local rotation = 1
+
+			RS.Heartbeat:Connect(function()	
+				if math.fmod(frames, 2) == 0 then
+					grad.Color = cskCache[rotation]			
+					if rotation >= #cskCache then rotation = 0 end
+					rotation = rotation + 1				
+				end
+				if frames >= 1000 then frames = 0 end
+				frames = frames + 1
+			end)
+		end
+		coroutine.wrap(FOJIPK_fake_script)()
+		local function UHTVLQL_fake_script() -- a_2.Script 
+			local script = Instance.new('Script', a_2)
+
+			local button = script.Parent
+			local gradient = button.UIGradient
+			local ts = game:GetService("TweenService") 
+			local ti = TweenInfo.new(1, Enum.EasingStyle.Circular, Enum.EasingDirection.Out)
+			local offset1 = {Offset = Vector2.new(1, 0)}
+			local create = ts:Create(gradient, ti, offset1)
+			local startingPos = Vector2.new(-1, 0) --start on the right, tween to the left so it looks like the shine went from left to right
+			local addWait = 2.3 --the amount of seconds between each couplet of shines
+
+			gradient.Offset = startingPos
+
+			local function animate()
+
+				create:Play()
+				create.Completed:Wait() --wait for tween to stop
+				gradient.Offset = startingPos --reset offset
+				create:Play() --play again (I did this only 2 times per "couplet", you can do it more times if you want)
+				create.Completed:Wait()
+				gradient.Offset = startingPos
+				wait(addWait) --wait some bit before the next couplet
+				animate() --call itself to make this into a loop
+
+			end
+
+			animate() --but we still need to initially call it
+		end
+		coroutine.wrap(UHTVLQL_fake_script)()
+		local function MTHINQ_fake_script() -- Player.LocalScript 
+			local script = Instance.new('LocalScript', Player)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(MTHINQ_fake_script)()
+		local function GAUIV_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Autofarm)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(GAUIV_fake_script)()
+		local function SKQAOJO_fake_script() -- Inventoryx.LocalScript 
+			local script = Instance.new('LocalScript', Inventoryx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(SKQAOJO_fake_script)()
+		local function TCPNGX_fake_script() -- Teleportx.LocalScript 
+			local script = Instance.new('LocalScript', Teleportx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(TCPNGX_fake_script)()
+		local function WZDUJ_fake_script() -- Settingsx.LocalScript 
+			local script = Instance.new('LocalScript', Settingsx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(WZDUJ_fake_script)()
+		local function SETTLJ_fake_script() -- Otherx.LocalScript 
+			local script = Instance.new('LocalScript', Otherx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(SETTLJ_fake_script)()
+		local function BHCIXUD_fake_script() -- targetnametp.LocalScript 
+			local script = Instance.new('LocalScript', targetnametp)
+
+			local NameHere = script.Parent
+
+			NameHere.FocusLost:connect(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					if (string.sub(string.lower(v.Name),1,string.len(NameHere.Text))) == string.lower(NameHere.Text) then
+						NameHere.Text = v.Name
+					end
+				end
+			end)
+		end
+		coroutine.wrap(BHCIXUD_fake_script)()
+		local function UELUNNO_fake_script() -- okx.LocalScript 
+			local script = Instance.new('LocalScript', okx)
+
+			hovering = false -- mouse hover
+			hovering2 = false -- backup mouse hover
+			pressed = false -- avoids size changes while verifying
+
+			script.Parent.MouseButton1Down:Connect(function()
+				if pressed == false then
+					script.Parent:TweenSize(UDim2.new(0, 125,0, 12), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2 , true)
+
+					pressed = true
+
+					wait(0.4)
+
+					script.Parent.Parent.Parent.Changelog:TweenPosition(UDim2.new(0.5, 0,2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.9, true)
+
+					wait(2.7)
+
+					script.Parent.Parent.Parent.Frame:TweenPosition(UDim2.new(0.314, 0,0.689, 0))
+
+					pcall(function()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+						loading:Destroy()
+
+					end)
+
+				end
+
+			end)
+
+			script.Parent.MouseEnter:Connect(function()
+
+				if pressed == false then
+
+					hovering = true
+					hovering2 = true
+
+					script.Parent:TweenSize(UDim2.new(0, 125,0, 21), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+				end
+
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				if pressed == false then
+					hovering = false
+					hovering2 = false
+
+					script.Parent:TweenSize(UDim2.new(0, 125,0, 16), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+				end
+
+
+			end)
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == true or hovering2 == true then
+
+					script.Parent:TweenSize(UDim2.new(0, 125,0, 21), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+
+				else
+					script.Parent:TweenSize(UDim2.new(0, 125,0, 16), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+
+				end
+
+
+			end)
+		end
+		coroutine.wrap(UELUNNO_fake_script)()
+
+		local UserInputService = game:GetService("UserInputService")
+		local runService = (game:GetService("RunService"));
+
+		local gui = Frame
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		function Lerp(a, b, m)
+			return a + (b - a) * m
+		end;
+
+		local lastMousePos
+		local lastGoalPos
+		local DRAG_SPEED = (8); -- // The speed of the UI darg.
+		function Update(dt)
+			if not (startPos) then return end;
+			if not (dragging) and (lastGoalPos) then
+				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+				return 
+			end;
+
+			local delta = (lastMousePos - UserInputService:GetMouseLocation())
+			local xGoal = (startPos.X.Offset - delta.X);
+			local yGoal = (startPos.Y.Offset - delta.Y);
+			lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+		end;
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+				lastMousePos = UserInputService:GetMouseLocation()
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		runService.Heartbeat:Connect(Update)
+
+		--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+		Player.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Otherx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = true
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			OtherFrame.Visible = false
+			TeleportFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+		Autofarm.MouseButton1Down:Connect(function()
+
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Otherx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = true
+			AutoBuyFrame.Visible = false
+			OtherFrame.Visible = false
+			TeleportFrame.Visible = false
+			SettingsFrame.Visible = false
+
+
+		end)
+
+
+
+		Inventoryx.MouseButton1Down:Connect(function()
+
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Inventoryx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Otherx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = true
+			OtherFrame.Visible = false
+			TeleportFrame.Visible = false
+			SettingsFrame.Visible = false
+
+
+		end)
+
+
+
+		Otherx.MouseButton1Down:Connect(function()
+
+
+			Player.TextColor3 = Color3.fromRGB(133, 133, 133)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Otherx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			OtherFrame.Visible = true
+			TeleportFrame.Visible = false
+			SettingsFrame.Visible = false
+
+
+		end)
+
+
+
+		Teleportx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(133, 133, 133)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Otherx.TextColor3 = Color3.fromRGB(133, 133, 133)
+			Settingsx.TextColor3 = Color3.fromRGB(133, 133, 133)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			OtherFrame.Visible = false
+			TeleportFrame.Visible = true
+			SettingsFrame.Visible = false
+
+
+		end)
+
+
+		Settingsx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(133, 133, 133)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Inventoryx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Otherx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			OtherFrame.Visible = false
+			TeleportFrame.Visible = false
+			SettingsFrame.Visible = true
+
+
+		end)
+
+
+
+		close.MouseButton1Down:Connect(function()
+			Frame.Visible = false
+			minimized.Visible = true
+
+			local framepos041423 = Frame.Position
+			minimized.Position = framepos041423
+
+		end)
+
+		open.MouseButton1Down:Connect(function()
+			minimized.Visible = false
+			Frame.Visible = true
+
+		end)
+
+		bypassfalse.MouseButton1Down:Connect(function()
+			bypassfalse.Visible = false
+			bypassingtext.Visible = true
+
+			warn("exhibition hub - retrying...")
+			wait(0.2)
+			warn("exhibition hub - retrying...")
+			wait(0.2)
+			warn("exhibition hub - retrying...")
+			wait(2.4)
+			warn("exhibition hub - retrying...")
+			wait(0.2)
+			warn("exhibition hub - retrying...")
+			wait(0.5)
+			pcall(function()
+				local reg = getreg()
+
+				for i, Function in next, reg do
+					if type(Function) == 'function' then
+						local info = getinfo(Function)
+
+						if info.name == 'kick' then
+							if (hookfunction(info.func, function(...)end)) then
+								print'exhibition hub - cleared errors.'
+							else
+								print'exhibition hub - cleared errors.'
+							end
+						end
+					end
+				end
+				local playerscripts = game:GetService'Players'.LocalPlayer.PlayerScripts
+
+				local script1 = playerscripts.LocalScript
+				local script2 = playerscripts.LocalScript2
+
+				local script1signal = script1.Changed
+				local script2signal = script2.Changed
+
+				for i, connection in next, getconnections(script1signal) do
+					connection:Disable()
+				end
+				for i, connection in next, getconnections(script2signal) do
+					connection:Disable()
+				end
+
+				script1:Destroy()
+				script2:Destroy()
+			end)
+
+			bypasstrue.Visible = true
+			bypassingtext.Visible = false
+			bypassed = true
+		end)
+
+		bypasstrue.MouseButton1Down:Connect(function()
+			bypasstrue.Visible = false
+			bypassingtext.Visible = true
+
+			warn("exhibition hub - retrying...")
+			wait(0.2)
+			warn("exhibition hub - retrying...")
+			wait(0.6)
+			warn("exhibition hub - retrying...")
+			wait(0.2)
+			warn("exhibition hub - retrying...")
+			wait(0.4)
+			warn("exhibition hub - retrying...")
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Failed To Disable. It Might Be Permanent.";
+				Duration = 5.8;
+			})
+			bypassingtext.Visible = false
+			bypasstrue.Visible = true
+		end)
+
+		flyfalse.MouseButton1Down:Connect(function()
+
+
+			pcall(function()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+			end)
+
+			flyfalse.Visible = false
+			flytrue.Visible = true
+
+			local speaker = game.Players.LocalPlayer
+			local RunService = game:GetService("RunService")
+			local CFspeed = 50
+			speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = true
+			local Head = speaker.Character:WaitForChild("Head")
+			Head.Anchored = true
+			if CFloop then CFloop:Disconnect() end
+			CFloop = RunService.Heartbeat:Connect(function(deltaTime)
+				local moveDirection = speaker.Character:FindFirstChildOfClass('Humanoid').MoveDirection * (CFspeed * deltaTime)
+				local headCFrame = Head.CFrame
+				local cameraCFrame = workspace.CurrentCamera.CFrame
+				local cameraOffset = headCFrame:ToObjectSpace(cameraCFrame).Position
+				cameraCFrame = cameraCFrame * CFrame.new(-cameraOffset.X, -cameraOffset.Y, -cameraOffset.Z + 1)
+				local cameraPosition = cameraCFrame.Position
+				local headPosition = headCFrame.Position
+
+				local objectSpaceVelocity = CFrame.new(cameraPosition, Vector3.new(headPosition.X, cameraPosition.Y, headPosition.Z)):VectorToObjectSpace(moveDirection)
+				Head.CFrame = CFrame.new(headPosition) * (cameraCFrame - cameraPosition) * CFrame.new(objectSpaceVelocity)
+			end)
+		end)
+
+		flytrue.MouseButton1Down:Connect(function()
+			flytrue.Visible = false
+			flyfalse.Visible = true
+
+			local speaker = game.Players.LocalPlayer
+			if CFloop then
+				CFloop:Disconnect()
+				speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = false
+				local Head = speaker.Character:WaitForChild("Head")
+				Head.Anchored = false
+			end
+		end)
+
+		partsdelete.MouseButton1Down:Connect(function()
+			partsdelete.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			partsdelete.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			for i,v in pairs(game.Workspace:GetDescendants()) do
+				local A = v:FindFirstChild("kills")
+				if A then
+					A.Parent:Destroy()
+				end
+			end
+
+
+		end)
+
+		local function MWA_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Frame)
+			while true do
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = walkspeedx.Text
+				end)
+				wait(0.1)
+			end
+		end
+
+		coroutine.wrap(MWA_fake_script)()
+
+		local function WA_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Frame)
+			while true do
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = jumppowerx.Text
+				end)
+				wait(0.1)
+			end
+		end
+		coroutine.wrap(WA_fake_script)()
+
+		grieffalse.MouseButton1Down:Connect(function()
+
+			grieffalse.Visible = false
+			greiftrue.Visible = true
+
+			while grieffalse.Visible == false do
+
+				pcall(function()
+
+					game.Lighting.Brightness = 2
+					game.Lighting.ClockTime = 14
+					game.Lighting.FogEnd = 100000             -- ANTI FOG
+					game.Lighting.GlobalShadows = false
+					game.Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+
+					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 16          -- ANTI SPEED MODIFY
+					game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = 50           -- ANTI JUMP MODIFY
+
+					game:GetService("Players").LocalPlayer.Character.bunnyJump.Enabled = false                      -- ANTI BUNNY HOP
+					game:GetService("ReplicatedStorage").bunnyJumping.Value = false	                    -- ANTI BUNNY HOP 2 <?>
+					game:GetService("Players").LocalPlayer.Character.speedscript.Enabled = false            -- ANTI SPEED MODIFY 2 <?>
+
+					game.Workspace.Gravity = 196.2                    -- ANTI GRAVITY EXPLOITS
+
+					game.Lighting.Negative.Enabled = false
+
+					game:GetService("Players").LocalPlayer.Character.invisible.Script.Enabled = false
+
+					game:GetService("Players").LocalPlayer.Character["Left Leg"].Transparency = 0
+					game:GetService("Players").LocalPlayer.Character["Left Arm"].Transparency = 0
+					game:GetService("Players").LocalPlayer.Character["Right Leg"].Transparency = 0
+					game:GetService("Players").LocalPlayer.Character["Right Arm"].Transparency = 0
+
+					game:GetService("Players").LocalPlayer.Character.Head.Transparency = 0
+					game:GetService("Players").LocalPlayer.Character.Torso.Transparency = 0
+
+
+
+				end)
+
+				task.wait()
+
+			end
+		end)
+
+		greiftrue.MouseButton1Down:Connect(function()
+
+			grieffalse.Visible = true
+			greiftrue.Visible = false
+
+			pcall(function()
+				game:GetService("Players").LocalPlayer.Character.bunnyJump.Enabled = true                        -- ANTI BUNNY HOP
+				game:GetService("Players").LocalPlayer.Character.speedscript.Enabled = true            -- ANTI SPEED MODIFY 2 <?>
+
+				game:GetService("Players").LocalPlayer.Character.invisible.Script.Enabled = true
+
+			end)
+
+		end)
+		
+		jumppowerx.FocusLost:connect(function()
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Is Bannable, But It's Your Choice.";
+				Duration = 5;
+			})
+		end)
+		
+		walkspeedx.FocusLost:connect(function()
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Is Bannable, But It's Your Choice.";
+				Duration = 5;
+			})
+		end)
+
+
+
+		characreset.MouseButton1Down:Connect(function()
+
+			characreset.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			characreset.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			pcall(function()
+
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+
+			end)
+
+		end)
+
+		farmfalse.MouseButton1Down:Connect(function()
+
+			if bypassed == true then
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Anti-AFK Has Been Executed.";
+					Duration = 5.5;
+				})
+
+
+				repeat wait() until game:IsLoaded()
+				game:GetService("Players").LocalPlayer.Idled:connect(function()
+					game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+				end)
+
+				pcall(function()
+
+					game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+				end)
+
+				coinsbeforex.Text = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
+
+				farmactivated = true
+
+				warn("exhibition hub - started.")
+
+				farmfalse.Visible = false
+				farmtrue.Visible = true
+
+				speeding = false
+
+				farmstatus.Text = "Waiting for anticheat."
+
+				wait(8.2)
+
+				while farmfalse.Visible == false do
+
+					if speeding == true then
+						farmfalse.Visible = true
+						farmtrue.Visible = false
+						farmstatus.Text = "Disabled."
+
+
+					else
+
+						wait(3)
+
+						warn("exhibition hub - active is true")
+
+						pcall(function()
+
+							farmstatus.Text = "Teleporting."
+
+							wait(0.4)
+
+							local textmath = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
+
+							local value = textmath + 250
+
+							local finishthing = game.Workspace.tower.sections.finish.FinishGlow.Position
+
+							local CFrameEnd = CFrame.new(finishthing) -- Place your coords in here
+							local Time = 6 -- Time in seconds
+							local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+							tween:Play()
+							tween.Completed:Wait()
+
+							repeat
+								wait()
+							until
+							game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0) or finishthing.Touched
+
+							game:GetService("Players").LocalPlayer.Character.Head.Anchored = true
+							wait(1.5)
+							game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
+
+							wait(0.2)
+
+							game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = true
+							wait(0.01)
+							game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = false
+
+							farmstatus.Text = "Waiting for next round."
+
+							wait(1)
+
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+							wait(2)
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+							wait(2)
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+
+							repeat
+								wait()
+							until
+							game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text >= "7:55"
+
+							farmstatus.Text = "Waiting for anticheat."
+
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+							wait(2)
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+							wait(2)
+							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+
+							wait(21)
+
+
+						end)
+					end
+					task.wait()
+				end
+
+			else
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Enable Anticheat Bypass.";
+					Duration = 5;
+				})
+
+			end
+
+		end)
+
+		farmtrue.MouseButton1Down:Connect(function()
+
+			farmfalse.Visible = false
+			farmtrue.Visible = false
+
+			speeding = true
+
+			farmactivated = false
+
+			farmstatus.Text = "Disabling."
+
+			pcall(function()
+
+				game.Workspace.FallenPartsDestroyHeight = -500
+
+			end)
+
+		end)
+
+		local function WXX()
+			local scrr = Instance.new("LocalScript", Frame)
+
+			pcall(function()
+				while true do
+					while farmactivated == true do
+						pcall(function()
+							for i,v in pairs(game.Workspace:GetDescendants()) do
+								local A = v:FindFirstChild("kills")
+								if A then
+									A.Parent:Destroy()
+								end
+							end
+						end)
+						task.wait()
+					end
+					task.wait()
+				end
+			end)
+		end
+		coroutine.wrap(WXX)()
+
+
+		local function WW3()
+			local spprr = Instance.new("LocalScript", Frame)
+			pcall(function()
+				while true do
+					pcall(function()
+						coinsnowx.Text = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
+					end)
+					task.wait()
+				end
+			end)
+
+		end
+		coroutine.wrap(WW3)()
+
+		buycratefalse.MouseButton1Down:Connect(function()
+
+			cratesbought.Text = "0"
+			local px = cratesbought.Text*1
+
+			buycratefalse.Visible = false
+			buycratetrue.Visible = true
+
+			while buycratefalse.Visible == false do
+				repeat
+					local value = coinsnowx.Text*1
+					if value >= 500 then
+						-- Script generated by R2Sv2
+						-- R2Sv2 developed by Luckyxero
+
+						local Event = game:GetService("ReplicatedStorage").openBox
+						Event:InvokeServer("Regular")
+
+						wait(1)
+						cratesbought.Text = px+1
+					else
+						print("exhibition hub - cleared errors.")
+					end
+					task.wait()
+				until
+				buycratefalse.Visible == true
+				task.wait()
+			end
+
+		end)
+
+		buycratetrue.MouseButton1Down:Connect(function()
+			buycratefalse.Visible = true
+			buycratetrue.Visible = false
+
+		end)
+
+		invinfalse.MouseButton1Down:Connect(function()
+			invinfalse.Visible = false
+			invintrue.Visible = true
+
+			while invinfalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "invincibility",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		invintrue.MouseButton1Down:Connect(function()
+			invinfalse.Visible = true
+			invintrue.Visible = false
+
+		end)
+
+		speedbuyfalse.MouseButton1Down:Connect(function()
+			speedbuyfalse.Visible = false
+			speedbuytrue.Visible = true
+
+			while speedbuyfalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "speed",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		speedbuytrue.MouseButton1Down:Connect(function()
+			speedbuyfalse.Visible = true
+			speedbuytrue.Visible = false
+
+		end)
+
+		gravfalse.MouseButton1Down:Connect(function()
+			gravfalse.Visible = false
+			gravtrue.Visible = true
+
+			while gravfalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "gravity",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		gravtrue.MouseButton1Down:Connect(function()
+			gravfalse.Visible = true
+			gravtrue.Visible = false
+
+		end)
+
+		fogfalse.MouseButton1Down:Connect(function()
+			fogfalse.Visible = false
+			fogtrue.Visible = true
+
+			while fogfalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "fog",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		fogtrue.MouseButton1Down:Connect(function()
+			fogfalse.Visible = true
+			fogtrue.Visible = false
+
+		end)
+
+		negativefalse.MouseButton1Down:Connect(function()
+			negativefalse.Visible = false
+			negativetrue.Visible = true
+
+			while negativefalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "negative",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		negativetrue.MouseButton1Down:Connect(function()
+			negativefalse.Visible = true
+			negativetrue.Visible = false
+
+		end)
+
+		lengthfalse.MouseButton1Down:Connect(function()
+			lengthfalse.Visible = false
+			lengthtrue.Visible = true
+
+			while lengthfalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "lengthen",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		lengthtrue.MouseButton1Down:Connect(function()
+			lengthfalse.Visible = true
+			lengthtrue.Visible = false
+
+		end)
+
+		timefalse.MouseButton1Down:Connect(function()
+			timefalse.Visible = false
+			timetrue.Visible = true
+
+			while timefalse.Visible == false do
+				local args = {
+					[1] = {
+						["kind"] = "mutator",
+						["item"] = "time",
+						["method"] = "regular"
+					}
+				}
+
+				game:GetService("ReplicatedStorage"):WaitForChild("buy"):InvokeServer(unpack(args))
+
+				task.wait()
+			end
+		end)
+
+		timetrue.MouseButton1Down:Connect(function()
+			timefalse.Visible = true
+			timetrue.Visible = false
+
+		end)
+
+
+		tptoolgiv.MouseButton1Down:Connect(function()
+
+			tptoolgiv.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			tptoolgiv.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			if bypassed == true then
+
+				local IYMouse = game.Players.LocalPlayer:GetMouse()
+				local speaker = game.Players.LocalPlayer
+				local TpTool = Instance.new("Tool")
+				TpTool.Name = "Teleport Tool"
+				TpTool.RequiresHandle = false
+				TpTool.Parent = speaker.Backpack
+				TpTool.Activated:Connect(function()
+					local Char = speaker.Character or workspace:FindFirstChild(speaker.Name)
+					local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
+					if not Char or not HRP then
+						return warn("no<?> error")
+					end
+					HRP.CFrame = CFrame.new(IYMouse.Hit.X, IYMouse.Hit.Y + 3, IYMouse.Hit.Z, select(4, HRP.CFrame:components()))
+				end)
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Enable Anticheat Bypass.";
+					Duration = 5;
+				})
+			end
+		end)
+
+		sayhi.MouseButton1Down:Connect(function()
+
+			sayhi.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			sayhi.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Fortnite bhxalls 🎵", "All")
+			wait(1)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I'm g4xay 🎵", "All")
+			wait(1.2)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I like boys 🎵", "All")
+			wait(1)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I kixhdnap autistic kvhids 🎵", "All")
+			wait(1.4)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Lil mosey is white 🎵", "All")
+		end)
+
+		playertp.MouseButton1Down:Connect(function()
+			playertp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			playertp.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			if game.Workspace:FindFirstChild(targetnametp.Text) then
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				wait(0.01)
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				wait(0.01)
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Icon = "rbxthumb://type=Asset&id=11745872952&w=150&h=150";
+					Title = "Warning";
+					Text = "Target's character not found.";
+					Duration = 3.5;
+				})
+			end
+		end)
+
+		shadowfalse.MouseButton1Down:Connect(function()
+			shadowfalse.Visible = false
+			shadowtrue.Visible = true
+
+			Frame.damn.Visible = true
+			Frame.damn2.Visible = true
+
+		end)
+
+		shadowtrue.MouseButton1Down:Connect(function()
+			shadowfalse.Visible = true
+			shadowtrue.Visible = false
+
+			Frame.damn.Visible = false
+			Frame.damn2.Visible = false
+
+		end)
+
+		selfdestruct.MouseButton1Down:Connect(function()
+			selfdestruct.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			selfdestruct.TextColor3 = Color3.fromRGB(163, 0, 0)
+			confirm.Visible = true
+
+
+		end)
+
+		yesxx.MouseButton1Down:Connect(function()
+			pcall(function()
+
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+
+			end)
+		end)
+
+		yesxx_2.MouseButton1Down:Connect(function()
+			confirm.Visible = false
+
+		end)
+
+	end
+
+else
+
+	game.StarterGui:SetCore("SendNotification", {
+		Icon = "rbxthumb://type=Asset&id=11745872952&w=150&h=150";
+		Title = "Warning";
+		Text = "This game is not compatible.";
+		Duration = 10.5;
+	})
+end
