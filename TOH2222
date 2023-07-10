@@ -327,6 +327,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		farmactivated = false
 		bypassed = false
 
+		print("phase1")
+
 		--Properties:
 
 		EXHIBITION.Name = "EXHIBITION </>"
@@ -2929,7 +2931,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 							local finishthing = game.Workspace.tower.sections.finish.FinishGlow.Position
 
 							local CFrameEnd = CFrame.new(finishthing) -- Place your coords in here
-							local Time = 6 -- Time in seconds
+							local Time = 7 -- Time in seconds
 							local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 							tween:Play()
 							tween.Completed:Wait()
