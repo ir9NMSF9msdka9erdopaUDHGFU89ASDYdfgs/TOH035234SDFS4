@@ -1,5 +1,5 @@
 -- PRO TOWER OF HELL
--- b0.01
+-- b0.02
 --
 --
 --
@@ -186,11 +186,6 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		_G.LOCALLEVEL = 0
 		_G.EXH_ACTIVE = true
 
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Warning";
-			Text = "It is recommended that you play in Pro Tower of Hell.";
-			Duration = 10;
-		})
 
 		EXHIBITION = Instance.new("ScreenGui")
 		loading = Instance.new("ImageLabel")
@@ -229,58 +224,64 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_8 = Instance.new("TextLabel")
 		partsdelete = Instance.new("TextButton")
 		walkspeedx = Instance.new("TextBox")
+		disablepartsfalse = Instance.new("TextButton")
+		TextLabel_9 = Instance.new("TextLabel")
+		disablepartstrue = Instance.new("TextButton")
+		TextLabel_10 = Instance.new("TextLabel")
+		getalltools = Instance.new("TextButton")
 		a_3 = Instance.new("TextLabel")
 		AutofarmFrame = Instance.new("ScrollingFrame")
 		farmtrue = Instance.new("TextButton")
-		farmfalse = Instance.new("TextButton")
-		TextLabel_9 = Instance.new("TextLabel")
-		TextLabel_10 = Instance.new("TextLabel")
 		TextLabel_11 = Instance.new("TextLabel")
+		TextLabel_12 = Instance.new("TextLabel")
+		TextLabel_13 = Instance.new("TextLabel")
 		coinsbeforex = Instance.new("TextLabel")
 		coinsnowx = Instance.new("TextLabel")
-		TextLabel_13 = Instance.new("TextLabel")
-		farmstatus = Instance.new("TextLabel")
-		AutoBuyFrame = Instance.new("ScrollingFrame")
 		TextLabel_14 = Instance.new("TextLabel")
+		farmstatus = Instance.new("TextLabel")
+		farmfalse = Instance.new("TextButton")
 		TextLabel_15 = Instance.new("TextLabel")
+		farmmode = Instance.new("TextLabel")
+		modechange = Instance.new("TextButton")
+		AutoBuyFrame = Instance.new("ScrollingFrame")
+		TextLabel_16 = Instance.new("TextLabel")
+		TextLabel_17 = Instance.new("TextLabel")
 		buycratefalse = Instance.new("TextButton")
 		cratesbought = Instance.new("TextLabel")
 		buycratetrue = Instance.new("TextButton")
-		TextLabel_16 = Instance.new("TextLabel")
+		TextLabel_18 = Instance.new("TextLabel")
 		invinfalse = Instance.new("TextButton")
 		invintrue = Instance.new("TextButton")
-		TextLabel_17 = Instance.new("TextLabel")
+		TextLabel_19 = Instance.new("TextLabel")
 		speedbuyfalse = Instance.new("TextButton")
 		speedbuytrue = Instance.new("TextButton")
-		TextLabel_18 = Instance.new("TextLabel")
+		TextLabel_20 = Instance.new("TextLabel")
 		gravfalse = Instance.new("TextButton")
 		gravtrue = Instance.new("TextButton")
-		TextLabel_19 = Instance.new("TextLabel")
+		TextLabel_21 = Instance.new("TextLabel")
 		fogfalse = Instance.new("TextButton")
 		fogtrue = Instance.new("TextButton")
-		TextLabel_20 = Instance.new("TextLabel")
+		TextLabel_22 = Instance.new("TextLabel")
 		negativefalse = Instance.new("TextButton")
 		negativetrue = Instance.new("TextButton")
-		TextLabel_21 = Instance.new("TextLabel")
+		TextLabel_23 = Instance.new("TextLabel")
 		lengthfalse = Instance.new("TextButton")
 		lengthtrue = Instance.new("TextButton")
-		TextLabel_22 = Instance.new("TextLabel")
+		TextLabel_24 = Instance.new("TextLabel")
 		timefalse = Instance.new("TextButton")
 		timetrue = Instance.new("TextButton")
 		SettingsFrame = Instance.new("ScrollingFrame")
-		TextLabel_23 = Instance.new("TextLabel")
+		TextLabel_25 = Instance.new("TextLabel")
 		shadowfalse = Instance.new("TextButton")
 		shadowtrue = Instance.new("TextButton")
-		TextLabel_24 = Instance.new("TextLabel")
-		selfdestruct = Instance.new("TextButton")
-		TextLabel_25 = Instance.new("TextLabel")
-		vers_2 = Instance.new("TextLabel")
 		TextLabel_26 = Instance.new("TextLabel")
-		lastupdat = Instance.new("TextLabel")
+		selfdestruct = Instance.new("TextButton")
 		TextLabel_27 = Instance.new("TextLabel")
+		vers_2 = Instance.new("TextLabel")
 		TextLabel_28 = Instance.new("TextLabel")
-		damn = Instance.new("ImageLabel")
-		damn2 = Instance.new("ImageLabel")
+		lastupdat = Instance.new("TextLabel")
+		TextLabel_29 = Instance.new("TextLabel")
+		TextLabel_30 = Instance.new("TextLabel")
 		CatergoryFrame = Instance.new("ScrollingFrame")
 		Player = Instance.new("TextButton")
 		Autofarm = Instance.new("TextButton")
@@ -291,19 +292,30 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		ImageLabel = Instance.new("ImageLabel")
 		TeleportFrame = Instance.new("ScrollingFrame")
 		playertp = Instance.new("TextButton")
-		TextLabel_29 = Instance.new("TextLabel")
+		TextLabel_31 = Instance.new("TextLabel")
 		targetnametp = Instance.new("TextBox")
+		TextLabel_32 = Instance.new("TextLabel")
+		finishtp = Instance.new("TextButton")
 		OtherFrame = Instance.new("ScrollingFrame")
 		tptoolgiv = Instance.new("TextButton")
-		TextLabel_30 = Instance.new("TextLabel")
-		TextLabel_31 = Instance.new("TextLabel")
+		TextLabel_33 = Instance.new("TextLabel")
+		TextLabel_34 = Instance.new("TextLabel")
 		sayhi = Instance.new("TextButton")
+		TextLabel_35 = Instance.new("TextLabel")
+		rejoincli = Instance.new("TextButton")
+		damn = Instance.new("ImageLabel")
+		damn2 = Instance.new("ImageLabel")
+		farmselectorframe = Instance.new("ImageLabel")
+		ScrollingFrame = Instance.new("ScrollingFrame")
+		smoothmode = Instance.new("TextButton")
+		instantmode = Instance.new("TextButton")
+		Choice = Instance.new("TextLabel")
 		minimized = Instance.new("ImageLabel")
-		TextLabel_32 = Instance.new("TextLabel")
+		TextLabel_36 = Instance.new("TextLabel")
 		open = Instance.new("TextButton")
 		minimized_2 = Instance.new("ImageLabel")
 		confirm = Instance.new("ImageLabel")
-		TextLabel_33 = Instance.new("TextLabel")
+		TextLabel_37 = Instance.new("TextLabel")
 		yesxx = Instance.new("TextButton")
 		yesxx_2 = Instance.new("TextButton")
 		asdasd = Instance.new("ImageLabel")
@@ -311,23 +323,63 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		f = Instance.new("ImageLabel")
 		dam_3 = Instance.new("ImageLabel")
 		dam_4 = Instance.new("ImageLabel")
-		blureffect = Instance.new("BlurEffect")
-		TextLabel_34 = Instance.new("TextLabel")
-		TextLabel_35 = Instance.new("TextLabel")
+		TextLabel_38 = Instance.new("TextLabel")
+		TextLabel_39 = Instance.new("TextLabel")
 		changelogframe = Instance.new("ScrollingFrame")
 		plus = Instance.new("TextLabel")
 		changed = Instance.new("TextLabel")
 		changed_2 = Instance.new("TextLabel")
 		plus_2 = Instance.new("TextLabel")
+		plus_3 = Instance.new("TextLabel")
+		changed_3 = Instance.new("TextLabel")
+		plus_4 = Instance.new("TextLabel")
+		changed_4 = Instance.new("TextLabel")
+		plus_5 = Instance.new("TextLabel")
+		changed_5 = Instance.new("TextLabel")
+		plus_6 = Instance.new("TextLabel")
+		changed_6 = Instance.new("TextLabel")
+		plus_7 = Instance.new("TextLabel")
+		changed_7 = Instance.new("TextLabel")
+		plus_8 = Instance.new("TextLabel")
+		changed_8 = Instance.new("TextLabel")
+		plus_9 = Instance.new("TextLabel")
+		changed_9 = Instance.new("TextLabel")
+		plus_10 = Instance.new("TextLabel")
+		changed_10 = Instance.new("TextLabel")
+		plus_11 = Instance.new("TextLabel")
+		changed_11 = Instance.new("TextLabel")
 		okx = Instance.new("TextButton")
+
+		-- CUSTOM INSTANCES / SETTINGS
+
+		blureffect = Instance.new("BlurEffect")
+
+		blureffect.Parent = game.Lighting
+
+		minimized.Active = true
+
+		minimized.Draggable = true
+
+		-- OTHER
+
 		Playerr = game.Players.LocalPlayer
 		Plrr = game:GetService("Players").LocalPlayer
 
 		speeding = false
 		farmactivated = false
 		bypassed = false
+		activation2 = false
+		frameactivated = false
+		fullydisabled = false
+		activationthing = false
 
-		print("phase1")
+		phasecounter = 0
+		anotherphasecounter = 0
+
+		LocalPlayerThingy = game:GetService("Players").LocalPlayer
+		Controls = require(LocalPlayerThingy.PlayerScripts.PlayerModule):GetControls()
+
+		--------------------------------------------------------------------------------------------------- PROTECTED BY DELUS, FUCK YOU SKIDS
 
 		--Properties:
 
@@ -373,8 +425,6 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		designx.SliceCenter = Rect.new(100, 100, 100, 100)
 		designx.SliceScale = 0.050
 
-		blureffect.Parent = game.Lighting
-
 		dam.Name = "dam"
 		dam.Parent = loading
 		dam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -391,7 +441,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		vers.Position = UDim2.new(0.457627118, 0, 0.817796588, 0)
 		vers.Size = UDim2.new(0, 200, 0, 50)
 		vers.Font = Enum.Font.FredokaOne
-		vers.Text = "b0.01"
+		vers.Text = "b0.02"
 		vers.TextColor3 = Color3.fromRGB(57, 57, 57)
 		vers.TextSize = 14.000
 
@@ -526,7 +576,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		flyfalse.Parent = PlayerFrame
 		flyfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		flyfalse.BackgroundTransparency = 1.000
-		flyfalse.Position = UDim2.new(0.270072997, 0, 0.0444444455, 0)
+		flyfalse.Position = UDim2.new(0.244525552, 0, 0.0444444455, 0)
 		flyfalse.Size = UDim2.new(0, 76, 0, 50)
 		flyfalse.Font = Enum.Font.FredokaOne
 		flyfalse.Text = "False"
@@ -537,7 +587,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		flytrue.Parent = PlayerFrame
 		flytrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		flytrue.BackgroundTransparency = 1.000
-		flytrue.Position = UDim2.new(0.270072997, 0, 0.0444444455, 0)
+		flytrue.Position = UDim2.new(0.244525552, 0, 0.0444444455, 0)
 		flytrue.Size = UDim2.new(0, 76, 0, 50)
 		flytrue.Visible = false
 		flytrue.Font = Enum.Font.FredokaOne
@@ -560,7 +610,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		characreset.Parent = PlayerFrame
 		characreset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		characreset.BackgroundTransparency = 1.000
-		characreset.Position = UDim2.new(0.572992682, 0, 0.296580076, 0)
+		characreset.Position = UDim2.new(0.572992682, 0, 0.391950458, 0)
 		characreset.Size = UDim2.new(0, 72, 0, 50)
 		characreset.Font = Enum.Font.FredokaOne
 		characreset.Text = "Click"
@@ -570,7 +620,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_3.Parent = PlayerFrame
 		TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_3.BackgroundTransparency = 1.000
-		TextLabel_3.Position = UDim2.new(0.0839416087, 0, 0.296581566, 0)
+		TextLabel_3.Position = UDim2.new(0.0839416087, 0, 0.391951948, 0)
 		TextLabel_3.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_3.Font = Enum.Font.FredokaOne
 		TextLabel_3.Text = "Reset Character:"
@@ -581,10 +631,10 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_4.Parent = PlayerFrame
 		TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_4.BackgroundTransparency = 1.000
-		TextLabel_4.Position = UDim2.new(0.0839416087, 0, 0.0919519439, 0)
+		TextLabel_4.Position = UDim2.new(0.0839416087, 0, 0.138248235, 0)
 		TextLabel_4.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_4.Font = Enum.Font.FredokaOne
-		TextLabel_4.Text = "Delete KillParts:"
+		TextLabel_4.Text = "Delete Kill Parts:"
 		TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_4.TextSize = 18.000
 		TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
@@ -615,7 +665,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_5.Parent = PlayerFrame
 		TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_5.BackgroundTransparency = 1.000
-		TextLabel_5.Position = UDim2.new(0.0839416087, 0, 0.232692704, 0)
+		TextLabel_5.Position = UDim2.new(0.0839416087, 0, 0.328063071, 0)
 		TextLabel_5.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_5.Font = Enum.Font.FredokaOne
 		TextLabel_5.Text = "Anti-Grief:"
@@ -626,7 +676,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_6.Parent = PlayerFrame
 		TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_6.BackgroundTransparency = 1.000
-		TextLabel_6.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_6.Position = UDim2.new(0.0839416087, 0, 0.235470459, 0)
 		TextLabel_6.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_6.Font = Enum.Font.FredokaOne
 		TextLabel_6.Text = "WalkSpeed:"
@@ -637,7 +687,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_7.Parent = PlayerFrame
 		TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_7.BackgroundTransparency = 1.000
-		TextLabel_7.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_7.Position = UDim2.new(0.0839416087, 0, 0.281766772, 0)
 		TextLabel_7.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_7.Font = Enum.Font.FredokaOne
 		TextLabel_7.Text = "JumpPower:"
@@ -663,7 +713,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		jumppowerx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		jumppowerx.BackgroundTransparency = 1.000
 		jumppowerx.BorderColor3 = Color3.fromRGB(27, 42, 53)
-		jumppowerx.Position = UDim2.new(0.525547445, 0, 0.193000004, 0)
+		jumppowerx.Position = UDim2.new(0.525547445, 0, 0.288370371, 0)
 		jumppowerx.Size = UDim2.new(0, 58, 0, 35)
 		jumppowerx.Font = Enum.Font.FredokaOne
 		jumppowerx.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
@@ -675,7 +725,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		grieffalse.Parent = PlayerFrame
 		grieffalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		grieffalse.BackgroundTransparency = 1.000
-		grieffalse.Position = UDim2.new(0.470802903, 0, 0.232407391, 0)
+		grieffalse.Position = UDim2.new(0.470802903, 0, 0.327777773, 0)
 		grieffalse.Size = UDim2.new(0, 76, 0, 50)
 		grieffalse.Font = Enum.Font.FredokaOne
 		grieffalse.Text = "False"
@@ -686,7 +736,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		greiftrue.Parent = PlayerFrame
 		greiftrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		greiftrue.BackgroundTransparency = 1.000
-		greiftrue.Position = UDim2.new(0.470802903, 0, 0.232407391, 0)
+		greiftrue.Position = UDim2.new(0.470802903, 0, 0.327777773, 0)
 		greiftrue.Size = UDim2.new(0, 76, 0, 50)
 		greiftrue.Visible = false
 		greiftrue.Font = Enum.Font.FredokaOne
@@ -697,10 +747,10 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		TextLabel_8.Parent = PlayerFrame
 		TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_8.BackgroundTransparency = 1.000
-		TextLabel_8.Position = UDim2.new(0.087590903, 0, 0.265893131, 0)
+		TextLabel_8.Position = UDim2.new(0.087590903, 0, 0.361263514, 0)
 		TextLabel_8.Size = UDim2.new(0, 226, 0, 28)
 		TextLabel_8.Font = Enum.Font.FredokaOne
-		TextLabel_8.Text = "If someone tries to buy Fog/BunnyHop or any grief items exhibition hub will block it."
+		TextLabel_8.Text = "If someone tries to buy BunnyHop/Invisibility or any grief items exhibition hub will block it."
 		TextLabel_8.TextColor3 = Color3.fromRGB(68, 68, 68)
 		TextLabel_8.TextScaled = true
 		TextLabel_8.TextSize = 15.000
@@ -711,7 +761,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		partsdelete.Parent = PlayerFrame
 		partsdelete.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		partsdelete.BackgroundTransparency = 1.000
-		partsdelete.Position = UDim2.new(0.576642275, 0, 0.0919504613, 0)
+		partsdelete.Position = UDim2.new(0.576642275, 0, 0.138246745, 0)
 		partsdelete.Size = UDim2.new(0, 72, 0, 50)
 		partsdelete.Font = Enum.Font.FredokaOne
 		partsdelete.Text = "Click"
@@ -723,12 +773,68 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		walkspeedx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		walkspeedx.BackgroundTransparency = 1.000
 		walkspeedx.BorderColor3 = Color3.fromRGB(27, 42, 53)
-		walkspeedx.Position = UDim2.new(0.525547445, 0, 0.143999994, 0)
+		walkspeedx.Position = UDim2.new(0.525547445, 0, 0.239370361, 0)
 		walkspeedx.Size = UDim2.new(0, 45, 0, 42)
 		walkspeedx.Font = Enum.Font.FredokaOne
 		walkspeedx.Text = "16"
 		walkspeedx.TextColor3 = Color3.fromRGB(148, 148, 148)
 		walkspeedx.TextSize = 18.000
+
+		disablepartsfalse.Name = "disablepartsfalse"
+		disablepartsfalse.Parent = PlayerFrame
+		disablepartsfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		disablepartsfalse.BackgroundTransparency = 1.000
+		disablepartsfalse.Position = UDim2.new(0.594890535, 0, 0.0916666687, 0)
+		disablepartsfalse.Size = UDim2.new(0, 76, 0, 50)
+		disablepartsfalse.Font = Enum.Font.FredokaOne
+		disablepartsfalse.Text = "False"
+		disablepartsfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		disablepartsfalse.TextSize = 18.000
+
+		TextLabel_9.Parent = PlayerFrame
+		TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.BackgroundTransparency = 1.000
+		TextLabel_9.Position = UDim2.new(0.0839416087, 0, 0.0919519514, 0)
+		TextLabel_9.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_9.Font = Enum.Font.FredokaOne
+		TextLabel_9.Text = "Disable Kill Parts:"
+		TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.TextSize = 18.000
+		TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+		disablepartstrue.Name = "disablepartstrue"
+		disablepartstrue.Parent = PlayerFrame
+		disablepartstrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		disablepartstrue.BackgroundTransparency = 1.000
+		disablepartstrue.Position = UDim2.new(0.594890535, 0, 0.0916666687, 0)
+		disablepartstrue.Size = UDim2.new(0, 76, 0, 50)
+		disablepartstrue.Visible = false
+		disablepartstrue.Font = Enum.Font.FredokaOne
+		disablepartstrue.Text = "True"
+		disablepartstrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		disablepartstrue.TextSize = 18.000
+
+		TextLabel_10.Parent = PlayerFrame
+		TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.BackgroundTransparency = 1.000
+		TextLabel_10.Position = UDim2.new(0.0839416087, 0, 0.184544533, 0)
+		TextLabel_10.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_10.Font = Enum.Font.FredokaOne
+		TextLabel_10.Text = "Get All Tools:"
+		TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.TextSize = 18.000
+		TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+		getalltools.Name = "getalltools"
+		getalltools.Parent = PlayerFrame
+		getalltools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		getalltools.BackgroundTransparency = 1.000
+		getalltools.Position = UDim2.new(0.521897733, 0, 0.184543043, 0)
+		getalltools.Size = UDim2.new(0, 72, 0, 50)
+		getalltools.Font = Enum.Font.FredokaOne
+		getalltools.Text = "Click"
+		getalltools.TextColor3 = Color3.fromRGB(163, 0, 0)
+		getalltools.TextSize = 18.000
 
 		a_3.Name = "a"
 		a_3.Parent = Frame
@@ -766,55 +872,44 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		farmtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		farmtrue.TextSize = 18.000
 
-		farmfalse.Name = "farmfalse"
-		farmfalse.Parent = AutofarmFrame
-		farmfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		farmfalse.BackgroundTransparency = 1.000
-		farmfalse.Position = UDim2.new(0.437956184, 0, -0.000925926026, 0)
-		farmfalse.Size = UDim2.new(0, 76, 0, 50)
-		farmfalse.Font = Enum.Font.FredokaOne
-		farmfalse.Text = "False"
-		farmfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
-		farmfalse.TextSize = 18.000
-
-		TextLabel_9.Parent = AutofarmFrame
-		TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_9.BackgroundTransparency = 1.000
-		TextLabel_9.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
-		TextLabel_9.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_9.Font = Enum.Font.FredokaOne
-		TextLabel_9.Text = "Autofarm:"
-		TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_9.TextSize = 18.000
-		TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
-
-		TextLabel_10.Parent = AutofarmFrame
-		TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_10.BackgroundTransparency = 1.000
-		TextLabel_10.Position = UDim2.new(0.0875912458, 0, 0.0919519514, 0)
-		TextLabel_10.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_10.Font = Enum.Font.FredokaOne
-		TextLabel_10.Text = "Coins Before:"
-		TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_10.TextSize = 18.000
-		TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
-
 		TextLabel_11.Parent = AutofarmFrame
 		TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_11.BackgroundTransparency = 1.000
-		TextLabel_11.Position = UDim2.new(0.0875912458, 0, 0.13824825, 0)
+		TextLabel_11.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
 		TextLabel_11.Size = UDim2.new(0, 30, 0, 50)
 		TextLabel_11.Font = Enum.Font.FredokaOne
-		TextLabel_11.Text = "Coins Now:"
+		TextLabel_11.Text = "Autofarm:"
 		TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel_11.TextSize = 18.000
 		TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_12.Parent = AutofarmFrame
+		TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_12.BackgroundTransparency = 1.000
+		TextLabel_12.Position = UDim2.new(0.0839416087, 0, 0.178988993, 0)
+		TextLabel_12.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_12.Font = Enum.Font.FredokaOne
+		TextLabel_12.Text = "Coins Before:"
+		TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_12.TextSize = 18.000
+		TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_13.Parent = AutofarmFrame
+		TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.BackgroundTransparency = 1.000
+		TextLabel_13.Position = UDim2.new(0.0839416087, 0, 0.225285292, 0)
+		TextLabel_13.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_13.Font = Enum.Font.FredokaOne
+		TextLabel_13.Text = "Coins Now:"
+		TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.TextSize = 18.000
+		TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
 
 		coinsbeforex.Name = "coinsbeforex"
 		coinsbeforex.Parent = AutofarmFrame
 		coinsbeforex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		coinsbeforex.BackgroundTransparency = 1.000
-		coinsbeforex.Position = UDim2.new(0.55109489, 0, 0.0919519514, 0)
+		coinsbeforex.Position = UDim2.new(0.547445238, 0, 0.178988993, 0)
 		coinsbeforex.Size = UDim2.new(0, 30, 0, 50)
 		coinsbeforex.Font = Enum.Font.FredokaOne
 		coinsbeforex.Text = "..."
@@ -826,7 +921,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		coinsnowx.Parent = AutofarmFrame
 		coinsnowx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		coinsnowx.BackgroundTransparency = 1.000
-		coinsnowx.Position = UDim2.new(0.485401481, 0, 0.13824825, 0)
+		coinsnowx.Position = UDim2.new(0.481751859, 0, 0.225285292, 0)
 		coinsnowx.Size = UDim2.new(0, 30, 0, 50)
 		coinsnowx.Font = Enum.Font.FredokaOne
 		coinsnowx.Text = "..."
@@ -834,16 +929,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		coinsnowx.TextSize = 18.000
 		coinsnowx.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_13.Parent = AutofarmFrame
-		TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_13.BackgroundTransparency = 1.000
-		TextLabel_13.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
-		TextLabel_13.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_13.Font = Enum.Font.FredokaOne
-		TextLabel_13.Text = "Status:"
-		TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_13.TextSize = 18.000
-		TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_14.Parent = AutofarmFrame
+		TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.BackgroundTransparency = 1.000
+		TextLabel_14.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
+		TextLabel_14.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_14.Font = Enum.Font.FredokaOne
+		TextLabel_14.Text = "Status:"
+		TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.TextSize = 18.000
+		TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
 
 		farmstatus.Name = "farmstatus"
 		farmstatus.Parent = AutofarmFrame
@@ -857,6 +952,51 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		farmstatus.TextSize = 15.000
 		farmstatus.TextXAlignment = Enum.TextXAlignment.Left
 
+		farmfalse.Name = "farmfalse"
+		farmfalse.Parent = AutofarmFrame
+		farmfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmfalse.BackgroundTransparency = 1.000
+		farmfalse.Position = UDim2.new(0.437956184, 0, -0.000925926026, 0)
+		farmfalse.Size = UDim2.new(0, 76, 0, 50)
+		farmfalse.Font = Enum.Font.FredokaOne
+		farmfalse.Text = "False"
+		farmfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		farmfalse.TextSize = 18.000
+
+		TextLabel_15.Parent = AutofarmFrame
+		TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.BackgroundTransparency = 1.000
+		TextLabel_15.Position = UDim2.new(0.0839416087, 0, 0.0910260156, 0)
+		TextLabel_15.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_15.Font = Enum.Font.FredokaOne
+		TextLabel_15.Text = "Mode:"
+		TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.TextSize = 18.000
+		TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+		farmmode.Name = "farmmode"
+		farmmode.Parent = AutofarmFrame
+		farmmode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmmode.BackgroundTransparency = 1.000
+		farmmode.Position = UDim2.new(0.306569338, 0, 0.091026023, 0)
+		farmmode.Size = UDim2.new(0, 30, 0, 50)
+		farmmode.Font = Enum.Font.FredokaOne
+		farmmode.Text = "Please Select."
+		farmmode.TextColor3 = Color3.fromRGB(175, 175, 175)
+		farmmode.TextSize = 15.000
+		farmmode.TextXAlignment = Enum.TextXAlignment.Left
+
+		modechange.Name = "modechange"
+		modechange.Parent = AutofarmFrame
+		modechange.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		modechange.BackgroundTransparency = 1.000
+		modechange.Position = UDim2.new(0.0851908326, 0, 0.150640249, -15)
+		modechange.Size = UDim2.new(0, 105, 0, 43)
+		modechange.Font = Enum.Font.FredokaOne
+		modechange.Text = "Change Mode"
+		modechange.TextColor3 = Color3.fromRGB(163, 0, 0)
+		modechange.TextSize = 18.000
+
 		AutoBuyFrame.Name = "AutoBuyFrame"
 		AutoBuyFrame.Parent = Frame
 		AutoBuyFrame.Active = true
@@ -869,27 +1009,27 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		AutoBuyFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
 		AutoBuyFrame.ScrollBarThickness = 6
 
-		TextLabel_14.Parent = AutoBuyFrame
-		TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_14.BackgroundTransparency = 1.000
-		TextLabel_14.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
-		TextLabel_14.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_14.Font = Enum.Font.FredokaOne
-		TextLabel_14.Text = "Auto Buy Crate 500$:"
-		TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_14.TextSize = 18.000
-		TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_16.Parent = AutoBuyFrame
+		TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.BackgroundTransparency = 1.000
+		TextLabel_16.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_16.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_16.Font = Enum.Font.FredokaOne
+		TextLabel_16.Text = "Auto Buy Crate 500$:"
+		TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.TextSize = 18.000
+		TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_15.Parent = AutoBuyFrame
-		TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_15.BackgroundTransparency = 1.000
-		TextLabel_15.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
-		TextLabel_15.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_15.Font = Enum.Font.FredokaOne
-		TextLabel_15.Text = "Creates Bought:"
-		TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_15.TextSize = 18.000
-		TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_17.Parent = AutoBuyFrame
+		TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.BackgroundTransparency = 1.000
+		TextLabel_17.Position = UDim2.new(0.0839416087, 0, 0.0447297245, 0)
+		TextLabel_17.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_17.Font = Enum.Font.FredokaOne
+		TextLabel_17.Text = "Crates Bought:"
+		TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.TextSize = 18.000
+		TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
 
 		buycratefalse.Name = "buycratefalse"
 		buycratefalse.Parent = AutoBuyFrame
@@ -926,16 +1066,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		buycratetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		buycratetrue.TextSize = 18.000
 
-		TextLabel_16.Parent = AutoBuyFrame
-		TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_16.BackgroundTransparency = 1.000
-		TextLabel_16.Position = UDim2.new(0.0839416087, 0, 0.091026023, 0)
-		TextLabel_16.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_16.Font = Enum.Font.FredokaOne
-		TextLabel_16.Text = "Auto Buy Invincibility 500$:"
-		TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_16.TextSize = 15.000
-		TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_18.Parent = AutoBuyFrame
+		TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.BackgroundTransparency = 1.000
+		TextLabel_18.Position = UDim2.new(0.0839416087, 0, 0.091026023, 0)
+		TextLabel_18.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_18.Font = Enum.Font.FredokaOne
+		TextLabel_18.Text = "Auto Buy Invincibility 500$:"
+		TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.TextSize = 15.000
+		TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
 
 		invinfalse.Name = "invinfalse"
 		invinfalse.Parent = AutoBuyFrame
@@ -960,16 +1100,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		invintrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		invintrue.TextSize = 18.000
 
-		TextLabel_17.Parent = AutoBuyFrame
-		TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_17.BackgroundTransparency = 1.000
-		TextLabel_17.Position = UDim2.new(0.0839416087, 0, 0.137322307, 0)
-		TextLabel_17.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_17.Font = Enum.Font.FredokaOne
-		TextLabel_17.Text = "Auto Buy Speed 100$:"
-		TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_17.TextSize = 18.000
-		TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_19.Parent = AutoBuyFrame
+		TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.BackgroundTransparency = 1.000
+		TextLabel_19.Position = UDim2.new(0.0839416087, 0, 0.137322307, 0)
+		TextLabel_19.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_19.Font = Enum.Font.FredokaOne
+		TextLabel_19.Text = "Auto Buy Speed 100$:"
+		TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.TextSize = 18.000
+		TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
 
 		speedbuyfalse.Name = "speedbuyfalse"
 		speedbuyfalse.Parent = AutoBuyFrame
@@ -994,16 +1134,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		speedbuytrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		speedbuytrue.TextSize = 18.000
 
-		TextLabel_18.Parent = AutoBuyFrame
-		TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_18.BackgroundTransparency = 1.000
-		TextLabel_18.Position = UDim2.new(0.0839416087, 0, 0.183618605, 0)
-		TextLabel_18.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_18.Font = Enum.Font.FredokaOne
-		TextLabel_18.Text = "Auto Buy Gravity 130$:"
-		TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_18.TextSize = 18.000
-		TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_20.Parent = AutoBuyFrame
+		TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_20.BackgroundTransparency = 1.000
+		TextLabel_20.Position = UDim2.new(0.0839416087, 0, 0.183618605, 0)
+		TextLabel_20.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_20.Font = Enum.Font.FredokaOne
+		TextLabel_20.Text = "Auto Buy Gravity 130$:"
+		TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_20.TextSize = 18.000
+		TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
 
 		gravfalse.Name = "gravfalse"
 		gravfalse.Parent = AutoBuyFrame
@@ -1028,16 +1168,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		gravtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		gravtrue.TextSize = 18.000
 
-		TextLabel_19.Parent = AutoBuyFrame
-		TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_19.BackgroundTransparency = 1.000
-		TextLabel_19.Position = UDim2.new(0.0839416087, 0, 0.229914904, 0)
-		TextLabel_19.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_19.Font = Enum.Font.FredokaOne
-		TextLabel_19.Text = "Auto Buy Fog 150$:"
-		TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_19.TextSize = 18.000
-		TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_21.Parent = AutoBuyFrame
+		TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.BackgroundTransparency = 1.000
+		TextLabel_21.Position = UDim2.new(0.0839416087, 0, 0.229914904, 0)
+		TextLabel_21.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_21.Font = Enum.Font.FredokaOne
+		TextLabel_21.Text = "Auto Buy Fog 150$:"
+		TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.TextSize = 18.000
+		TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
 
 		fogfalse.Name = "fogfalse"
 		fogfalse.Parent = AutoBuyFrame
@@ -1062,16 +1202,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		fogtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		fogtrue.TextSize = 18.000
 
-		TextLabel_20.Parent = AutoBuyFrame
-		TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_20.BackgroundTransparency = 1.000
-		TextLabel_20.Position = UDim2.new(0.0839416087, 0, 0.276211202, 0)
-		TextLabel_20.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_20.Font = Enum.Font.FredokaOne
-		TextLabel_20.Text = "Auto Buy Negative 150$:"
-		TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_20.TextSize = 18.000
-		TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_22.Parent = AutoBuyFrame
+		TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.BackgroundTransparency = 1.000
+		TextLabel_22.Position = UDim2.new(0.0839416087, 0, 0.276211202, 0)
+		TextLabel_22.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_22.Font = Enum.Font.FredokaOne
+		TextLabel_22.Text = "Auto Buy Negative 150$:"
+		TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.TextSize = 18.000
+		TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
 
 		negativefalse.Name = "negativefalse"
 		negativefalse.Parent = AutoBuyFrame
@@ -1096,16 +1236,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		negativetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		negativetrue.TextSize = 18.000
 
-		TextLabel_21.Parent = AutoBuyFrame
-		TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_21.BackgroundTransparency = 1.000
-		TextLabel_21.Position = UDim2.new(0.0839416087, 0, 0.322507501, 0)
-		TextLabel_21.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_21.Font = Enum.Font.FredokaOne
-		TextLabel_21.Text = "Auto Buy Lengthen 150$:"
-		TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_21.TextSize = 15.000
-		TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_23.Parent = AutoBuyFrame
+		TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.BackgroundTransparency = 1.000
+		TextLabel_23.Position = UDim2.new(0.0839416087, 0, 0.322507501, 0)
+		TextLabel_23.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_23.Font = Enum.Font.FredokaOne
+		TextLabel_23.Text = "Auto Buy Lengthen 150$:"
+		TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.TextSize = 15.000
+		TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
 
 		lengthfalse.Name = "lengthfalse"
 		lengthfalse.Parent = AutoBuyFrame
@@ -1130,16 +1270,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		lengthtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		lengthtrue.TextSize = 18.000
 
-		TextLabel_22.Parent = AutoBuyFrame
-		TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_22.BackgroundTransparency = 1.000
-		TextLabel_22.Position = UDim2.new(0.0839416087, 0, 0.368803799, 0)
-		TextLabel_22.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_22.Font = Enum.Font.FredokaOne
-		TextLabel_22.Text = "Auto Buy Extra Time 50$:"
-		TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_22.TextSize = 15.000
-		TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_24.Parent = AutoBuyFrame
+		TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.BackgroundTransparency = 1.000
+		TextLabel_24.Position = UDim2.new(0.0839416087, 0, 0.368803799, 0)
+		TextLabel_24.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_24.Font = Enum.Font.FredokaOne
+		TextLabel_24.Text = "Auto Buy Extra Time 50$:"
+		TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.TextSize = 15.000
+		TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
 
 		timefalse.Name = "timefalse"
 		timefalse.Parent = AutoBuyFrame
@@ -1176,16 +1316,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		SettingsFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
 		SettingsFrame.ScrollBarThickness = 6
 
-		TextLabel_23.Parent = SettingsFrame
-		TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_23.BackgroundTransparency = 1.000
-		TextLabel_23.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
-		TextLabel_23.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_23.Font = Enum.Font.FredokaOne
-		TextLabel_23.Text = "UI Shadow:"
-		TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_23.TextSize = 18.000
-		TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_25.Parent = SettingsFrame
+		TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.BackgroundTransparency = 1.000
+		TextLabel_25.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_25.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_25.Font = Enum.Font.FredokaOne
+		TextLabel_25.Text = "UI Shadow:"
+		TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.TextSize = 18.000
+		TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
 
 		shadowfalse.Name = "shadowfalse"
 		shadowfalse.Parent = SettingsFrame
@@ -1210,16 +1350,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		shadowtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
 		shadowtrue.TextSize = 18.000
 
-		TextLabel_24.Parent = SettingsFrame
-		TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_24.BackgroundTransparency = 1.000
-		TextLabel_24.Position = UDim2.new(0.0839416087, 0, 0.0475075021, 0)
-		TextLabel_24.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_24.Font = Enum.Font.FredokaOne
-		TextLabel_24.Text = "Self Destruct"
-		TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_24.TextSize = 18.000
-		TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_26.Parent = SettingsFrame
+		TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_26.BackgroundTransparency = 1.000
+		TextLabel_26.Position = UDim2.new(0.0839416087, 0, 0.0475075021, 0)
+		TextLabel_26.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_26.Font = Enum.Font.FredokaOne
+		TextLabel_26.Text = "Self Destruct"
+		TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_26.TextSize = 18.000
+		TextLabel_26.TextXAlignment = Enum.TextXAlignment.Left
 
 		selfdestruct.Name = "selfdestruct"
 		selfdestruct.Parent = SettingsFrame
@@ -1232,16 +1372,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		selfdestruct.TextColor3 = Color3.fromRGB(163, 0, 0)
 		selfdestruct.TextSize = 18.000
 
-		TextLabel_25.Parent = SettingsFrame
-		TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_25.BackgroundTransparency = 1.000
-		TextLabel_25.Position = UDim2.new(0.0839416087, 0, 0.0938037932, 0)
-		TextLabel_25.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_25.Font = Enum.Font.FredokaOne
-		TextLabel_25.Text = "Current Version:"
-		TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_25.TextSize = 18.000
-		TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_27.Parent = SettingsFrame
+		TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.BackgroundTransparency = 1.000
+		TextLabel_27.Position = UDim2.new(0.0839416087, 0, 0.0938037932, 0)
+		TextLabel_27.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_27.Font = Enum.Font.FredokaOne
+		TextLabel_27.Text = "Current Version:"
+		TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.TextSize = 18.000
+		TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
 
 		vers_2.Name = "vers"
 		vers_2.Parent = SettingsFrame
@@ -1250,21 +1390,21 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		vers_2.Position = UDim2.new(0.613138616, 0, 0.0938037932, 0)
 		vers_2.Size = UDim2.new(0, 30, 0, 50)
 		vers_2.Font = Enum.Font.FredokaOne
-		vers_2.Text = "b0.01"
+		vers_2.Text = "b0.02"
 		vers_2.TextColor3 = Color3.fromRGB(178, 178, 178)
 		vers_2.TextSize = 18.000
 		vers_2.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_26.Parent = SettingsFrame
-		TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_26.BackgroundTransparency = 1.000
-		TextLabel_26.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
-		TextLabel_26.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_26.Font = Enum.Font.FredokaOne
-		TextLabel_26.Text = "Last Updated:"
-		TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_26.TextSize = 18.000
-		TextLabel_26.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_28.Parent = SettingsFrame
+		TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_28.BackgroundTransparency = 1.000
+		TextLabel_28.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_28.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_28.Font = Enum.Font.FredokaOne
+		TextLabel_28.Text = "Last Updated:"
+		TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_28.TextSize = 18.000
+		TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
 
 		lastupdat.Name = "lastupdat"
 		lastupdat.Parent = SettingsFrame
@@ -1273,50 +1413,32 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		lastupdat.Position = UDim2.new(0.532846689, 0, 0.140100092, 0)
 		lastupdat.Size = UDim2.new(0, 30, 0, 50)
 		lastupdat.Font = Enum.Font.FredokaOne
-		lastupdat.Text = "Jul 9th 2023"
+		lastupdat.Text = "Jul 19th 2023"
 		lastupdat.TextColor3 = Color3.fromRGB(178, 178, 178)
 		lastupdat.TextSize = 18.000
 		lastupdat.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_27.Parent = SettingsFrame
-		TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_27.BackgroundTransparency = 1.000
-		TextLabel_27.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
-		TextLabel_27.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_27.Font = Enum.Font.FredokaOne
-		TextLabel_27.Text = "Creator:"
-		TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_27.TextSize = 18.000
-		TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_29.Parent = SettingsFrame
+		TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.BackgroundTransparency = 1.000
+		TextLabel_29.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_29.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_29.Font = Enum.Font.FredokaOne
+		TextLabel_29.Text = "Creator:"
+		TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.TextSize = 18.000
+		TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_28.Parent = SettingsFrame
-		TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_28.BackgroundTransparency = 1.000
-		TextLabel_28.Position = UDim2.new(0.397810191, 0, 0.18639639, 0)
-		TextLabel_28.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_28.Font = Enum.Font.FredokaOne
-		TextLabel_28.Text = "missayat on Discord"
-		TextLabel_28.TextColor3 = Color3.fromRGB(178, 178, 178)
-		TextLabel_28.TextSize = 18.000
-		TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
-
-		damn.Name = "damn"
-		damn.Parent = Frame
-		damn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		damn.BackgroundTransparency = 1.000
-		damn.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
-		damn.Size = UDim2.new(0, 894, 0, 595)
-		damn.ZIndex = -2
-		damn.Image = "http://www.roblox.com/asset/?id=13628158155"
-
-		damn2.Name = "damn2"
-		damn2.Parent = Frame
-		damn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		damn2.BackgroundTransparency = 1.000
-		damn2.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
-		damn2.Size = UDim2.new(0, 894, 0, 595)
-		damn2.ZIndex = -2
-		damn2.Image = "http://www.roblox.com/asset/?id=13628158155"
+		TextLabel_30.Parent = SettingsFrame
+		TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_30.BackgroundTransparency = 1.000
+		TextLabel_30.Position = UDim2.new(0.397810191, 0, 0.18639639, 0)
+		TextLabel_30.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_30.Font = Enum.Font.FredokaOne
+		TextLabel_30.Text = "missayat on Discord"
+		TextLabel_30.TextColor3 = Color3.fromRGB(178, 178, 178)
+		TextLabel_30.TextSize = 18.000
+		TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
 
 		CatergoryFrame.Name = "CatergoryFrame"
 		CatergoryFrame.Parent = Frame
@@ -1445,16 +1567,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		playertp.TextColor3 = Color3.fromRGB(163, 0, 0)
 		playertp.TextSize = 18.000
 
-		TextLabel_29.Parent = TeleportFrame
-		TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_29.BackgroundTransparency = 1.000
-		TextLabel_29.Position = UDim2.new(0.0839416087, 0, 0.00213710219, 0)
-		TextLabel_29.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_29.Font = Enum.Font.FredokaOne
-		TextLabel_29.Text = "Player:"
-		TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_29.TextSize = 18.000
-		TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_31.Parent = TeleportFrame
+		TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.BackgroundTransparency = 1.000
+		TextLabel_31.Position = UDim2.new(0.0839416087, 0, 0.00213710219, 0)
+		TextLabel_31.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_31.Font = Enum.Font.FredokaOne
+		TextLabel_31.Text = "Player:"
+		TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.TextSize = 18.000
+		TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
 
 		targetnametp.Name = "targetnametp"
 		targetnametp.Parent = TeleportFrame
@@ -1468,6 +1590,28 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		targetnametp.TextColor3 = Color3.fromRGB(178, 178, 178)
 		targetnametp.TextSize = 13.000
 		targetnametp.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_32.Parent = TeleportFrame
+		TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.BackgroundTransparency = 1.000
+		TextLabel_32.Position = UDim2.new(0.0839416087, 0, 0.0947296917, 0)
+		TextLabel_32.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_32.Font = Enum.Font.FredokaOne
+		TextLabel_32.Text = "To The Top (Finish):"
+		TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.TextSize = 18.000
+		TextLabel_32.TextXAlignment = Enum.TextXAlignment.Left
+
+		finishtp.Name = "finishtp"
+		finishtp.Parent = TeleportFrame
+		finishtp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		finishtp.BackgroundTransparency = 1.000
+		finishtp.Position = UDim2.new(0.67153275, 0, 0.0947282463, 0)
+		finishtp.Size = UDim2.new(0, 72, 0, 50)
+		finishtp.Font = Enum.Font.FredokaOne
+		finishtp.Text = "Click"
+		finishtp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		finishtp.TextSize = 18.000
 
 		OtherFrame.Name = "OtherFrame"
 		OtherFrame.Parent = Frame
@@ -1492,27 +1636,27 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		tptoolgiv.TextColor3 = Color3.fromRGB(163, 0, 0)
 		tptoolgiv.TextSize = 18.000
 
-		TextLabel_30.Parent = OtherFrame
-		TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_30.BackgroundTransparency = 1.000
-		TextLabel_30.Position = UDim2.new(0.0839416087, 0, 0.0456556454, 0)
-		TextLabel_30.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_30.Font = Enum.Font.FredokaOne
-		TextLabel_30.Text = "Say Hi:"
-		TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_30.TextSize = 18.000
-		TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_33.Parent = OtherFrame
+		TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.BackgroundTransparency = 1.000
+		TextLabel_33.Position = UDim2.new(0.0839416087, 0, 0.0456556454, 0)
+		TextLabel_33.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_33.Font = Enum.Font.FredokaOne
+		TextLabel_33.Text = "Say Hi:"
+		TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.TextSize = 18.000
+		TextLabel_33.TextXAlignment = Enum.TextXAlignment.Left
 
-		TextLabel_31.Parent = OtherFrame
-		TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_31.BackgroundTransparency = 1.000
-		TextLabel_31.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
-		TextLabel_31.Size = UDim2.new(0, 30, 0, 50)
-		TextLabel_31.Font = Enum.Font.FredokaOne
-		TextLabel_31.Text = "Give Teleport Tool:"
-		TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_31.TextSize = 18.000
-		TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_34.Parent = OtherFrame
+		TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_34.BackgroundTransparency = 1.000
+		TextLabel_34.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_34.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_34.Font = Enum.Font.FredokaOne
+		TextLabel_34.Text = "Give Teleport Tool:"
+		TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_34.TextSize = 18.000
+		TextLabel_34.TextXAlignment = Enum.TextXAlignment.Left
 
 		sayhi.Name = "sayhi"
 		sayhi.Parent = OtherFrame
@@ -1524,6 +1668,114 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		sayhi.Text = "Click"
 		sayhi.TextColor3 = Color3.fromRGB(163, 0, 0)
 		sayhi.TextSize = 18.000
+
+		TextLabel_35.Parent = OtherFrame
+		TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_35.BackgroundTransparency = 1.000
+		TextLabel_35.Position = UDim2.new(0.0839416087, 0, 0.0947297215, 0)
+		TextLabel_35.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_35.Font = Enum.Font.FredokaOne
+		TextLabel_35.Text = "Rejoin Server:"
+		TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_35.TextSize = 18.000
+		TextLabel_35.TextXAlignment = Enum.TextXAlignment.Left
+
+		rejoincli.Name = "rejoincli"
+		rejoincli.Parent = OtherFrame
+		rejoincli.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		rejoincli.BackgroundTransparency = 1.000
+		rejoincli.Position = UDim2.new(0.485401392, 0, 0.0947282761, 0)
+		rejoincli.Size = UDim2.new(0, 72, 0, 50)
+		rejoincli.Font = Enum.Font.FredokaOne
+		rejoincli.Text = "Click"
+		rejoincli.TextColor3 = Color3.fromRGB(163, 0, 0)
+		rejoincli.TextSize = 18.000
+
+		damn.Name = "damn"
+		damn.Parent = Frame
+		damn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn.BackgroundTransparency = 1.000
+		damn.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn.Size = UDim2.new(0, 894, 0, 595)
+		damn.ZIndex = -2
+		damn.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		damn2.Name = "damn2"
+		damn2.Parent = Frame
+		damn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn2.BackgroundTransparency = 1.000
+		damn2.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn2.Size = UDim2.new(0, 894, 0, 595)
+		damn2.ZIndex = -2
+		damn2.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		farmselectorframe.Name = "farmselectorframe"
+		farmselectorframe.Parent = Frame
+		farmselectorframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		farmselectorframe.BackgroundTransparency = 1.000
+		farmselectorframe.Position = UDim2.new(0.847494543, -68, 0.401592672, 0)
+		farmselectorframe.Size = UDim2.new(0, 136, 0, 160)
+		farmselectorframe.ZIndex = -1
+		farmselectorframe.Image = "rbxassetid://3570695787"
+		farmselectorframe.ImageColor3 = Color3.fromRGB(33, 33, 33)
+		farmselectorframe.ScaleType = Enum.ScaleType.Slice
+		farmselectorframe.SliceCenter = Rect.new(100, 100, 100, 100)
+		farmselectorframe.SliceScale = 0.040
+
+		ScrollingFrame.Parent = farmselectorframe
+		ScrollingFrame.Active = true
+		ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScrollingFrame.BackgroundTransparency = 1.000
+		ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ScrollingFrame.BorderSizePixel = 0
+		ScrollingFrame.Position = UDim2.new(0.0514705889, 0, 0.0576923117, 0)
+		ScrollingFrame.Size = UDim2.new(0, 122, 0, 137)
+		ScrollingFrame.ZIndex = -1
+		ScrollingFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		ScrollingFrame.ScrollBarThickness = 4
+
+		smoothmode.Name = "smoothmode"
+		smoothmode.Parent = ScrollingFrame
+		smoothmode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		smoothmode.BackgroundTransparency = 1.000
+		smoothmode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		smoothmode.BorderSizePixel = 0
+		smoothmode.Position = UDim2.new(0.22131148, 0, 0.00473019481, 0)
+		smoothmode.Size = UDim2.new(0, 68, 0, 27)
+		smoothmode.ZIndex = -1
+		smoothmode.Font = Enum.Font.FredokaOne
+		smoothmode.Text = "Smooth Teleport"
+		smoothmode.TextColor3 = Color3.fromRGB(230, 230, 230)
+		smoothmode.TextSize = 14.000
+
+		instantmode.Name = "instantmode"
+		instantmode.Parent = ScrollingFrame
+		instantmode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		instantmode.BackgroundTransparency = 1.000
+		instantmode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		instantmode.BorderSizePixel = 0
+		instantmode.Position = UDim2.new(0.22131148, 0, 0.0592173748, 0)
+		instantmode.Size = UDim2.new(0, 68, 0, 27)
+		instantmode.ZIndex = -1
+		instantmode.Font = Enum.Font.FredokaOne
+		instantmode.Text = "Instant Teleport"
+		instantmode.TextColor3 = Color3.fromRGB(230, 230, 230)
+		instantmode.TextSize = 14.000
+
+		Choice.Name = "Choice"
+		Choice.Parent = farmselectorframe
+		Choice.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Choice.BackgroundTransparency = 1.000
+		Choice.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Choice.BorderSizePixel = 0
+		Choice.Position = UDim2.new(0.661764681, 0, 0.670923471, 0)
+		Choice.Size = UDim2.new(0, 35, 0, 19)
+		Choice.ZIndex = -2
+		Choice.Font = Enum.Font.SourceSans
+		Choice.Text = "nothingggms"
+		Choice.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Choice.TextSize = 1.000
+		Choice.TextTransparency = 1.000
 
 		minimized.Name = "minimized"
 		minimized.Parent = EXHIBITION
@@ -1539,19 +1791,17 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		minimized.ScaleType = Enum.ScaleType.Slice
 		minimized.SliceCenter = Rect.new(100, 100, 100, 100)
 		minimized.SliceScale = 0.040
-		minimized.Active = true
-		minimized.Draggable = true
 
-		TextLabel_32.Parent = minimized
-		TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_32.BackgroundTransparency = 1.000
-		TextLabel_32.Position = UDim2.new(-0.214285716, 0, 0, 0)
-		TextLabel_32.Size = UDim2.new(0, 200, 0, 44)
-		TextLabel_32.ZIndex = 99
-		TextLabel_32.Font = Enum.Font.FredokaOne
-		TextLabel_32.Text = "exhibition hub"
-		TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_32.TextSize = 14.000
+		TextLabel_36.Parent = minimized
+		TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_36.BackgroundTransparency = 1.000
+		TextLabel_36.Position = UDim2.new(-0.214285716, 0, 0, 0)
+		TextLabel_36.Size = UDim2.new(0, 200, 0, 44)
+		TextLabel_36.ZIndex = 99
+		TextLabel_36.Font = Enum.Font.FredokaOne
+		TextLabel_36.Text = "exhibition hub"
+		TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_36.TextSize = 14.000
 
 		open.Name = "open"
 		open.Parent = minimized
@@ -1594,18 +1844,18 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		confirm.SliceCenter = Rect.new(100, 100, 100, 100)
 		confirm.SliceScale = 0.040
 
-		TextLabel_33.Parent = confirm
-		TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_33.BackgroundTransparency = 1.000
-		TextLabel_33.Position = UDim2.new(0.0686695278, 0, 0.228187919, 0)
-		TextLabel_33.Size = UDim2.new(0, 200, 0, 33)
-		TextLabel_33.ZIndex = 200
-		TextLabel_33.Font = Enum.Font.FredokaOne
-		TextLabel_33.Text = "Are you sure you would like to self destruct?"
-		TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_33.TextScaled = true
-		TextLabel_33.TextSize = 18.000
-		TextLabel_33.TextWrapped = true
+		TextLabel_37.Parent = confirm
+		TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_37.BackgroundTransparency = 1.000
+		TextLabel_37.Position = UDim2.new(0.0686695278, 0, 0.228187919, 0)
+		TextLabel_37.Size = UDim2.new(0, 200, 0, 33)
+		TextLabel_37.ZIndex = 200
+		TextLabel_37.Font = Enum.Font.FredokaOne
+		TextLabel_37.Text = "Are you sure you would like to self destruct?"
+		TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_37.TextScaled = true
+		TextLabel_37.TextSize = 18.000
+		TextLabel_37.TextWrapped = true
 
 		yesxx.Name = "yesxx"
 		yesxx.Parent = confirm
@@ -1689,25 +1939,25 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		dam_4.ZIndex = -3
 		dam_4.Image = "http://www.roblox.com/asset/?id=13628158155"
 
-		TextLabel_34.Parent = Changelog
-		TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_34.BackgroundTransparency = 1.000
-		TextLabel_34.Position = UDim2.new(0.597500086, 0, 0, 0)
-		TextLabel_34.Size = UDim2.new(0, 200, 0, 50)
-		TextLabel_34.Font = Enum.Font.FredokaOne
-		TextLabel_34.Text = "exhibition hub"
-		TextLabel_34.TextColor3 = Color3.fromRGB(54, 54, 54)
-		TextLabel_34.TextSize = 14.000
+		TextLabel_38.Parent = Changelog
+		TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_38.BackgroundTransparency = 1.000
+		TextLabel_38.Position = UDim2.new(0.597500086, 0, 0, 0)
+		TextLabel_38.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_38.Font = Enum.Font.FredokaOne
+		TextLabel_38.Text = "exhibition hub"
+		TextLabel_38.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_38.TextSize = 14.000
 
-		TextLabel_35.Parent = Changelog
-		TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_35.BackgroundTransparency = 1.000
-		TextLabel_35.Position = UDim2.new(-0.0624999255, 0, 0, 0)
-		TextLabel_35.Size = UDim2.new(0, 217, 0, 50)
-		TextLabel_35.Font = Enum.Font.FredokaOne
-		TextLabel_35.Text = "Changelog:      b0.01"
-		TextLabel_35.TextColor3 = Color3.fromRGB(54, 54, 54)
-		TextLabel_35.TextSize = 14.000
+		TextLabel_39.Parent = Changelog
+		TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_39.BackgroundTransparency = 1.000
+		TextLabel_39.Position = UDim2.new(-0.0624999255, 0, 0, 0)
+		TextLabel_39.Size = UDim2.new(0, 217, 0, 50)
+		TextLabel_39.Font = Enum.Font.FredokaOne
+		TextLabel_39.Text = "Changelog:      b0.02"
+		TextLabel_39.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_39.TextSize = 14.000
 
 		changelogframe.Name = "changelog frame"
 		changelogframe.Parent = Changelog
@@ -1727,8 +1977,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		plus.Position = UDim2.new(0.0974999964, 0, -0.00420166645, 0)
 		plus.Size = UDim2.new(0, 18, 0, 44)
 		plus.Font = Enum.Font.FredokaOne
-		plus.Text = "!"
-		plus.TextColor3 = Color3.fromRGB(0, 100, 193)
+		plus.Text = "+"
+		plus.TextColor3 = Color3.fromRGB(0, 193, 0)
 		plus.TextSize = 19.000
 
 		changed.Name = "changed"
@@ -1738,7 +1988,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		changed.Position = UDim2.new(0.217500001, 0, 0.0441176817, 0)
 		changed.Size = UDim2.new(0, 18, 0, 44)
 		changed.Font = Enum.Font.FredokaOne
-		changed.Text = "Released to the public."
+		changed.Text = "Disable KillParts module."
 		changed.TextColor3 = Color3.fromRGB(193, 193, 193)
 		changed.TextSize = 15.000
 		changed.TextXAlignment = Enum.TextXAlignment.Left
@@ -1750,7 +2000,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		changed_2.Position = UDim2.new(0.217500001, 0, -0.00420166645, 0)
 		changed_2.Size = UDim2.new(0, 18, 0, 44)
 		changed_2.Font = Enum.Font.FredokaOne
-		changed_2.Text = "Compatible with Tower of Hell game."
+		changed_2.Text = "WalkSpeed AntiBan."
 		changed_2.TextColor3 = Color3.fromRGB(193, 193, 193)
 		changed_2.TextSize = 15.000
 		changed_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -1765,6 +2015,213 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		plus_2.Text = "+"
 		plus_2.TextColor3 = Color3.fromRGB(0, 193, 0)
 		plus_2.TextSize = 19.000
+
+		plus_3.Name = "plus"
+		plus_3.Parent = changelogframe
+		plus_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_3.BackgroundTransparency = 1.000
+		plus_3.Position = UDim2.new(0.099999994, 0, 0.0903361738, 0)
+		plus_3.Size = UDim2.new(0, 18, 0, 44)
+		plus_3.Font = Enum.Font.FredokaOne
+		plus_3.Text = "+"
+		plus_3.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_3.TextSize = 19.000
+
+		changed_3.Name = "changed"
+		changed_3.Parent = changelogframe
+		changed_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_3.BackgroundTransparency = 1.000
+		changed_3.Position = UDim2.new(0.217500001, 0, 0.0903361738, 0)
+		changed_3.Size = UDim2.new(0, 18, 0, 44)
+		changed_3.Font = Enum.Font.FredokaOne
+		changed_3.Text = "Get All Tools module."
+		changed_3.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_3.TextSize = 15.000
+		changed_3.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_4.Name = "plus"
+		plus_4.Parent = changelogframe
+		plus_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_4.BackgroundTransparency = 1.000
+		plus_4.Position = UDim2.new(0.099999994, 0, 0.136554658, 0)
+		plus_4.Size = UDim2.new(0, 18, 0, 44)
+		plus_4.Font = Enum.Font.FredokaOne
+		plus_4.Text = "+"
+		plus_4.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_4.TextSize = 19.000
+
+		changed_4.Name = "changed"
+		changed_4.Parent = changelogframe
+		changed_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_4.BackgroundTransparency = 1.000
+		changed_4.Position = UDim2.new(0.217500001, 0, 0.136554658, 0)
+		changed_4.Size = UDim2.new(0, 18, 0, 44)
+		changed_4.Font = Enum.Font.FredokaOne
+		changed_4.Text = "Autofarm customizations."
+		changed_4.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_4.TextSize = 15.000
+		changed_4.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_5.Name = "plus"
+		plus_5.Parent = changelogframe
+		plus_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_5.BackgroundTransparency = 1.000
+		plus_5.Position = UDim2.new(0.099999994, 0, 0.180672303, 0)
+		plus_5.Size = UDim2.new(0, 18, 0, 44)
+		plus_5.Font = Enum.Font.FredokaOne
+		plus_5.Text = "+"
+		plus_5.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_5.TextSize = 19.000
+
+		changed_5.Name = "changed"
+		changed_5.Parent = changelogframe
+		changed_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_5.BackgroundTransparency = 1.000
+		changed_5.Position = UDim2.new(0.217500001, 0, 0.180672303, 0)
+		changed_5.Size = UDim2.new(0, 18, 0, 44)
+		changed_5.Font = Enum.Font.FredokaOne
+		changed_5.Text = "Rejoin Server module."
+		changed_5.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_5.TextSize = 15.000
+		changed_5.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_6.Name = "plus"
+		plus_6.Parent = changelogframe
+		plus_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_6.BackgroundTransparency = 1.000
+		plus_6.Position = UDim2.new(0.099999994, 0, 0.272058874, 0)
+		plus_6.Size = UDim2.new(0, 18, 0, 44)
+		plus_6.Font = Enum.Font.FredokaOne
+		plus_6.Text = "~"
+		plus_6.TextColor3 = Color3.fromRGB(255, 255, 0)
+		plus_6.TextSize = 19.000
+
+		changed_6.Name = "changed"
+		changed_6.Parent = changelogframe
+		changed_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_6.BackgroundTransparency = 1.000
+		changed_6.Position = UDim2.new(0.217500001, 0, 0.272058874, 0)
+		changed_6.Size = UDim2.new(0, 18, 0, 44)
+		changed_6.Font = Enum.Font.FredokaOne
+		changed_6.Text = "Will fix Crates Bought counter."
+		changed_6.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_6.TextSize = 15.000
+		changed_6.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_7.Name = "plus"
+		plus_7.Parent = changelogframe
+		plus_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_7.BackgroundTransparency = 1.000
+		plus_7.Position = UDim2.new(0.099999994, 0, 0.314075679, 0)
+		plus_7.Size = UDim2.new(0, 18, 0, 44)
+		plus_7.Font = Enum.Font.FredokaOne
+		plus_7.Text = "~"
+		plus_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+		plus_7.TextSize = 19.000
+
+		changed_7.Name = "changed"
+		changed_7.Parent = changelogframe
+		changed_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_7.BackgroundTransparency = 1.000
+		changed_7.Position = UDim2.new(0.217500001, 0, 0.314075679, 0)
+		changed_7.Size = UDim2.new(0, 18, 0, 44)
+		changed_7.Font = Enum.Font.FredokaOne
+		changed_7.Text = "Improved Anticheat Bypass."
+		changed_7.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_7.TextSize = 15.000
+		changed_7.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_8.Name = "plus"
+		plus_8.Parent = changelogframe
+		plus_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_8.BackgroundTransparency = 1.000
+		plus_8.Position = UDim2.new(0.099999994, 0, 0.360294163, 0)
+		plus_8.Size = UDim2.new(0, 18, 0, 44)
+		plus_8.Font = Enum.Font.FredokaOne
+		plus_8.Text = "~"
+		plus_8.TextColor3 = Color3.fromRGB(255, 255, 0)
+		plus_8.TextSize = 19.000
+
+		changed_8.Name = "changed"
+		changed_8.Parent = changelogframe
+		changed_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_8.BackgroundTransparency = 1.000
+		changed_8.Position = UDim2.new(0.217500001, 0, 0.360294163, 0)
+		changed_8.Size = UDim2.new(0, 18, 0, 44)
+		changed_8.Font = Enum.Font.FredokaOne
+		changed_8.Text = "Improved Autofarm."
+		changed_8.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_8.TextSize = 15.000
+		changed_8.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_9.Name = "plus"
+		plus_9.Parent = changelogframe
+		plus_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_9.BackgroundTransparency = 1.000
+		plus_9.Position = UDim2.new(0.099999994, 0, 0.406512648, 0)
+		plus_9.Size = UDim2.new(0, 18, 0, 44)
+		plus_9.Font = Enum.Font.FredokaOne
+		plus_9.Text = "~"
+		plus_9.TextColor3 = Color3.fromRGB(255, 255, 0)
+		plus_9.TextSize = 19.000
+
+		changed_9.Name = "changed"
+		changed_9.Parent = changelogframe
+		changed_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_9.BackgroundTransparency = 1.000
+		changed_9.Position = UDim2.new(0.217500001, 0, 0.406512648, 0)
+		changed_9.Size = UDim2.new(0, 18, 0, 44)
+		changed_9.Font = Enum.Font.FredokaOne
+		changed_9.Text = "Improved Fly."
+		changed_9.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_9.TextSize = 15.000
+		changed_9.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_10.Name = "plus"
+		plus_10.Parent = changelogframe
+		plus_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_10.BackgroundTransparency = 1.000
+		plus_10.Position = UDim2.new(0.099999994, 0, 0.226890787, 0)
+		plus_10.Size = UDim2.new(0, 18, 0, 44)
+		plus_10.Font = Enum.Font.FredokaOne
+		plus_10.Text = "+"
+		plus_10.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_10.TextSize = 19.000
+
+		changed_10.Name = "changed"
+		changed_10.Parent = changelogframe
+		changed_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_10.BackgroundTransparency = 1.000
+		changed_10.Position = UDim2.new(0.217500001, 0, 0.226890787, 0)
+		changed_10.Size = UDim2.new(0, 18, 0, 44)
+		changed_10.Font = Enum.Font.FredokaOne
+		changed_10.Text = "Teleport to the top module."
+		changed_10.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_10.TextSize = 15.000
+		changed_10.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_11.Name = "plus"
+		plus_11.Parent = changelogframe
+		plus_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_11.BackgroundTransparency = 1.000
+		plus_11.Position = UDim2.new(0.099999994, 0, 0.452731133, 0)
+		plus_11.Size = UDim2.new(0, 18, 0, 44)
+		plus_11.Font = Enum.Font.FredokaOne
+		plus_11.Text = "~"
+		plus_11.TextColor3 = Color3.fromRGB(255, 255, 0)
+		plus_11.TextSize = 19.000
+
+		changed_11.Name = "changed"
+		changed_11.Parent = changelogframe
+		changed_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_11.BackgroundTransparency = 1.000
+		changed_11.Position = UDim2.new(0.217500001, 0, 0.452731133, 0)
+		changed_11.Size = UDim2.new(0, 18, 0, 44)
+		changed_11.Font = Enum.Font.FredokaOne
+		changed_11.Text = "Fixed performance issues."
+		changed_11.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_11.TextSize = 15.000
+		changed_11.TextXAlignment = Enum.TextXAlignment.Left
 
 		okx.Name = "okx"
 		okx.Parent = Changelog
@@ -1781,7 +2238,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 		-- Scripts:
 
-		local function VZTVH_fake_script() -- welcome.LocalScript 
+		local function YJLZXZ_fake_script() -- welcome.LocalScript 
 			local script = Instance.new('LocalScript', welcome)
 
 			wait(2.8)
@@ -1801,8 +2258,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			script.Parent.Text = "Welcome"
 			wait(0.1)
 		end
-		coroutine.wrap(VZTVH_fake_script)()
-		local function FEWRS_fake_script() -- title.LocalScript 
+		coroutine.wrap(YJLZXZ_fake_script)()
+		local function WDYMCSW_fake_script() -- title.LocalScript 
 			local script = Instance.new('LocalScript', title)
 
 			repeat
@@ -1869,8 +2326,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			wait(0.4)
 			script.Parent.Parent.Parent.Changelog:TweenPosition(UDim2.new(0.5, 0,0.5, 0))
 		end
-		coroutine.wrap(FEWRS_fake_script)()
-		local function SVFPB_fake_script() -- title.Script 
+		coroutine.wrap(WDYMCSW_fake_script)()
+		local function WISMUAR_fake_script() -- title.Script 
 			local script = Instance.new('Script', title)
 
 			local RS = game:GetService("RunService")
@@ -1886,6 +2343,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			local count = 0
 			local cskCache = {}
+			local gamepassid = 8782801
+			local MarketplaceService = game:GetService("MarketplaceService")
 
 			while true do
 				for i = 0, num do
@@ -1921,8 +2380,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				frames = frames + 1
 			end)
 		end
-		coroutine.wrap(SVFPB_fake_script)()
-		local function FOJIPK_fake_script() -- lliinneee.Script 
+		coroutine.wrap(WISMUAR_fake_script)()
+		local function YWGMG_fake_script() -- lliinneee.Script 
 			local script = Instance.new('Script', lliinneee)
 
 			local RS = game:GetService("RunService")
@@ -1938,6 +2397,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			local count = 0
 			local cskCache = {}
+			local gamepassid = 8782801
+			local MarketplaceService = game:GetService("MarketplaceService")
 
 			while true do
 				for i = 0, num do
@@ -1973,8 +2434,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				frames = frames + 1
 			end)
 		end
-		coroutine.wrap(FOJIPK_fake_script)()
-		local function UHTVLQL_fake_script() -- a_2.Script 
+		coroutine.wrap(YWGMG_fake_script)()
+		local function MSAPRH_fake_script() -- a_2.Script 
 			local script = Instance.new('Script', a_2)
 
 			local button = script.Parent
@@ -2003,8 +2464,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			animate() --but we still need to initially call it
 		end
-		coroutine.wrap(UHTVLQL_fake_script)()
-		local function MTHINQ_fake_script() -- Player.LocalScript 
+		coroutine.wrap(MSAPRH_fake_script)()
+		local function HPWF_fake_script() -- Player.LocalScript 
 			local script = Instance.new('LocalScript', Player)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2050,8 +2511,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(MTHINQ_fake_script)()
-		local function GAUIV_fake_script() -- Autofarm.LocalScript 
+		coroutine.wrap(HPWF_fake_script)()
+		local function CUQYAVF_fake_script() -- Autofarm.LocalScript 
 			local script = Instance.new('LocalScript', Autofarm)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2097,8 +2558,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(GAUIV_fake_script)()
-		local function SKQAOJO_fake_script() -- Inventoryx.LocalScript 
+		coroutine.wrap(CUQYAVF_fake_script)()
+		local function MIOZBJ_fake_script() -- Inventoryx.LocalScript 
 			local script = Instance.new('LocalScript', Inventoryx)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2144,8 +2605,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(SKQAOJO_fake_script)()
-		local function TCPNGX_fake_script() -- Teleportx.LocalScript 
+		coroutine.wrap(MIOZBJ_fake_script)()
+		local function AHNEH_fake_script() -- Teleportx.LocalScript 
 			local script = Instance.new('LocalScript', Teleportx)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2191,8 +2652,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(TCPNGX_fake_script)()
-		local function WZDUJ_fake_script() -- Settingsx.LocalScript 
+		coroutine.wrap(AHNEH_fake_script)()
+		local function RJKN_fake_script() -- Settingsx.LocalScript 
 			local script = Instance.new('LocalScript', Settingsx)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2238,8 +2699,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(WZDUJ_fake_script)()
-		local function SETTLJ_fake_script() -- Otherx.LocalScript 
+		coroutine.wrap(RJKN_fake_script)()
+		local function XIHVC_fake_script() -- Otherx.LocalScript 
 			local script = Instance.new('LocalScript', Otherx)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -2285,8 +2746,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
 			end)
 		end
-		coroutine.wrap(SETTLJ_fake_script)()
-		local function BHCIXUD_fake_script() -- targetnametp.LocalScript 
+		coroutine.wrap(XIHVC_fake_script)()
+		local function DVLJU_fake_script() -- targetnametp.LocalScript 
 			local script = Instance.new('LocalScript', targetnametp)
 
 			local NameHere = script.Parent
@@ -2299,8 +2760,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				end
 			end)
 		end
-		coroutine.wrap(BHCIXUD_fake_script)()
-		local function UELUNNO_fake_script() -- okx.LocalScript 
+		coroutine.wrap(DVLJU_fake_script)()
+		local function KLAY_fake_script() -- okx.LocalScript 
 			local script = Instance.new('LocalScript', okx)
 
 			hovering = false -- mouse hover
@@ -2346,6 +2807,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			end)
 
+
 			script.Parent.MouseEnter:Connect(function()
 
 				if pressed == false then
@@ -2382,7 +2844,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			end)
 		end
-		coroutine.wrap(UELUNNO_fake_script)()
+		coroutine.wrap(KLAY_fake_script)()
 
 		local UserInputService = game:GetService("UserInputService")
 		local runService = (game:GetService("RunService"));
@@ -2438,7 +2900,10 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 		runService.Heartbeat:Connect(Update)
 
-		--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+		------------------------------------------------------------------------------------------------------
+
 
 
 		Player.MouseButton1Down:Connect(function()
@@ -2604,13 +3069,16 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 						if info.name == 'kick' then
 							if (hookfunction(info.func, function(...)end)) then
-								print'exhibition hub - cleared errors.'
+								warn("exhibition hub - attempt blocked")
 							else
-								print'exhibition hub - cleared errors.'
+								warn("exhibition hub - failed <!>")
 							end
 						end
 					end
 				end
+
+				--2nd anticheat bypass
+
 				local playerscripts = game:GetService'Players'.LocalPlayer.PlayerScripts
 
 				local script1 = playerscripts.LocalScript
@@ -2628,6 +3096,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 				script1:Destroy()
 				script2:Destroy()
+
+				warn("exhibition hub - success <!>")
 			end)
 
 			bypasstrue.Visible = true
@@ -2650,7 +3120,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			warn("exhibition hub - retrying...")
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Warning";
-				Text = "Failed To Disable. It Might Be Permanent.";
+				Text = "Failed To Disable. This Probably Means It's Permanent.";
 				Duration = 5.8;
 			})
 			bypassingtext.Visible = false
@@ -2659,52 +3129,41 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 		flyfalse.MouseButton1Down:Connect(function()
 
+			if bypassed == true then
 
-			pcall(function()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
-				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
-			end)
+				flyfalse.Visible = false
+				flytrue.Visible = true
 
-			flyfalse.Visible = false
-			flytrue.Visible = true
+				local speaker = game.Players.LocalPlayer
+				local RunService = game:GetService("RunService")
+				local CFspeed = 50
+				speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = true
+				local Head = speaker.Character:WaitForChild("Head")
+				Head.Anchored = true
+				if CFloop then CFloop:Disconnect() end
+				CFloop = RunService.Heartbeat:Connect(function(deltaTime)
+					local moveDirection = speaker.Character:FindFirstChildOfClass('Humanoid').MoveDirection * (CFspeed * deltaTime)
+					local headCFrame = Head.CFrame
+					local cameraCFrame = workspace.CurrentCamera.CFrame
+					local cameraOffset = headCFrame:ToObjectSpace(cameraCFrame).Position
+					cameraCFrame = cameraCFrame * CFrame.new(-cameraOffset.X, -cameraOffset.Y, -cameraOffset.Z + 1)
+					local cameraPosition = cameraCFrame.Position
+					local headPosition = headCFrame.Position
 
-			local speaker = game.Players.LocalPlayer
-			local RunService = game:GetService("RunService")
-			local CFspeed = 50
-			speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = true
-			local Head = speaker.Character:WaitForChild("Head")
-			Head.Anchored = true
-			if CFloop then CFloop:Disconnect() end
-			CFloop = RunService.Heartbeat:Connect(function(deltaTime)
-				local moveDirection = speaker.Character:FindFirstChildOfClass('Humanoid').MoveDirection * (CFspeed * deltaTime)
-				local headCFrame = Head.CFrame
-				local cameraCFrame = workspace.CurrentCamera.CFrame
-				local cameraOffset = headCFrame:ToObjectSpace(cameraCFrame).Position
-				cameraCFrame = cameraCFrame * CFrame.new(-cameraOffset.X, -cameraOffset.Y, -cameraOffset.Z + 1)
-				local cameraPosition = cameraCFrame.Position
-				local headPosition = headCFrame.Position
+					local objectSpaceVelocity = CFrame.new(cameraPosition, Vector3.new(headPosition.X, cameraPosition.Y, headPosition.Z)):VectorToObjectSpace(moveDirection)
+					Head.CFrame = CFrame.new(headPosition) * (cameraCFrame - cameraPosition) * CFrame.new(objectSpaceVelocity)
+				end)
 
-				local objectSpaceVelocity = CFrame.new(cameraPosition, Vector3.new(headPosition.X, cameraPosition.Y, headPosition.Z)):VectorToObjectSpace(moveDirection)
-				Head.CFrame = CFrame.new(headPosition) * (cameraCFrame - cameraPosition) * CFrame.new(objectSpaceVelocity)
-			end)
+			else
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Enable Anticheat Bypass.";
+					Duration = 5;
+				})
+
+
+			end
 		end)
 
 		flytrue.MouseButton1Down:Connect(function()
@@ -2739,7 +3198,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			local script = Instance.new('LocalScript', Frame)
 			while true do
 				pcall(function()
-					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = walkspeedx.Text
+					game.ReplicatedStorage.globalSpeed.Value = walkspeedx.Text
 				end)
 				wait(0.1)
 			end
@@ -2782,6 +3241,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 					game.Workspace.Gravity = 196.2                    -- ANTI GRAVITY EXPLOITS
 
+					game.Players.LocalPlayer.PlayerGui.heightMeter.HeightMeter[game.Players.LocalPlayer.UserId].Visible = true -- ANTI HEIGHT METER VISIBLE = FALSE
+
 					game.Lighting.Negative.Enabled = false
 
 					game:GetService("Players").LocalPlayer.Character.invisible.Script.Enabled = false
@@ -2798,7 +3259,7 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 				end)
 
-				task.wait()
+				wait(0.1)
 
 			end
 		end)
@@ -2817,16 +3278,8 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			end)
 
 		end)
-		
+
 		jumppowerx.FocusLost:connect(function()
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Warning";
-				Text = "Is Bannable, But It's Your Choice.";
-				Duration = 5;
-			})
-		end)
-		
-		walkspeedx.FocusLost:connect(function()
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Warning";
 				Text = "Is Bannable, But It's Your Choice.";
@@ -2870,101 +3323,199 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 		farmfalse.MouseButton1Down:Connect(function()
 
 			if bypassed == true then
+				if Choice.Text == "nothingggms" then
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "Warning";
+						Text = "Please Choose A Mode.";
+						Duration = 5;
+					})
 
-				game.StarterGui:SetCore("SendNotification", {
-					Title = "Warning";
-					Text = "Anti-AFK Has Been Executed.";
-					Duration = 5.5;
-				})
+				else
+
+					activation2 = true
+
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "Warning";
+						Text = "Anti-AFK Has Been Executed.";
+						Duration = 5.5;
+					})
+
+					pcall(function()
+
+						game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+					end)
 
 
-				repeat wait() until game:IsLoaded()
-				game:GetService("Players").LocalPlayer.Idled:connect(function()
-					game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-				end)
+					repeat wait() until game:IsLoaded()
+					game:GetService("Players").LocalPlayer.Idled:connect(function()
+						game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+					end)
 
-				pcall(function()
+					pcall(function()
 
-					game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+						game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
 
-				end)
+					end)
 
-				coinsbeforex.Text = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
+					coinsbeforex.Text = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
 
-				farmactivated = true
+					farmactivated = true
 
-				warn("exhibition hub - started.")
+					anotherphasecounter += 1
 
-				farmfalse.Visible = false
-				farmtrue.Visible = true
+					print("exhibition hub - phase"..anotherphasecounter)
 
-				speeding = false
+					farmfalse.Visible = false
+					farmtrue.Visible = true
 
-				farmstatus.Text = "Waiting for anticheat."
+					speeding = false
+					
+					if game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text <= "1:00" then
+						farmstatus.Text = "Waiting for next round."
+						repeat
+							wait()
+						until
+						game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text >= "7:50"
+					end
 
-				wait(8.2)
+					if Choice.Text == "smooth" then
 
-				while farmfalse.Visible == false do
+						farmstatus.Text = "Waiting for anticheat."
 
-					if speeding == true then
-						farmfalse.Visible = true
-						farmtrue.Visible = false
-						farmstatus.Text = "Disabled."
+						game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+						wait(2)
+						game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+						wait(2)
+						game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
 
+						Controls:Disable()
+
+
+						wait(15.2)
+
+						while farmfalse.Visible == false do
+
+							if speeding == true then
+
+								farmfalse.Visible = true
+								farmtrue.Visible = false
+								farmstatus.Text = "Disabled."
+
+								activation2 = false
+								farmactivated = false
+								secondfarm = false
+								fullydisabled = true
+
+								Controls:Enable()
+
+								print("exhibition hub - stopped successfully")
+								print("exhibition hub - cleared phase counters")
+
+								phasecounter = 0
+								anotherphasecounter = 0
+
+							else
+
+								pcall(function()
+
+									game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+								end)
+
+								if game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0) then
+									print("exhibition hub - looks like the user already finished.")
+									farmstatus.Text = "Waiting for next round."
+									repeat
+										wait()
+									until
+									game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(255, 255, 255)
+									wait(18.8)
+								else
+
+									wait(4)
+
+									print("exhibition hub - phase"..anotherphasecounter.." cleared.")
+
+									farmstatus.Text = "Teleporting."
+
+									wait(1.5)
+
+									pcall(function()
+
+										finishthing = game.Workspace.tower.sections.finish.FinishGlow.Position
+										local CFrameEnd = CFrame.new(finishthing) -- Place your coords in here
+										local Time = 12 -- Time in seconds
+										local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+										tween:Play()
+
+										repeat
+											if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+												print("exhibition hub - looking for anticheat suspicions.")
+											else
+												warn("exhibition hub - anticheat detected suspicious movements.")
+												farmstatus.Text = "Attempting to bypass."
+												farmstatus.TextColor3 = Color3.fromRGB(191, 0, 0)
+												wait(25.2)
+												farmstatus.Text = "Teleporting."
+												farmstatus.TextColor3 = Color3.fromRGB(175, 175, 175)
+												Controls:Disable()
+												wait(1.5)
+												local CFrameEnd = CFrame.new(finishthing) -- Place your coords in here
+												local Time = 16 -- Time in seconds
+												local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+												tween:Play()
+											end
+											task.wait()
+										until
+										game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0)
+
+										print("exhibition hub - anticheat thinks no suspicious movement happened. phase"..anotherphasecounter.." success. <!>")
+
+
+										farmstatus.Text = "Waiting for next round."
+
+										wait(5)
+
+										game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+
+										print("loaded")
+
+										wait(5)
+
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+
+										repeat
+											wait()
+										until
+										game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text >= "7:55"
+
+										farmstatus.Text = "Waiting for anticheat."
+
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+
+										wait(18.8)
+									end)
+								end
+								task.wait()
+
+							end
+
+						end
 
 					else
 
-						wait(3)
 
-						warn("exhibition hub - active is true")
 
-						pcall(function()
-
-							farmstatus.Text = "Teleporting."
-
-							wait(0.4)
-
-							local textmath = game.Players.LocalPlayer.PlayerGui.shop2.shop.yxle.Frame.yxles.Text
-
-							local value = textmath + 250
-
-							local finishthing = game.Workspace.tower.sections.finish.FinishGlow.Position
-
-							local CFrameEnd = CFrame.new(finishthing) -- Place your coords in here
-							local Time = 7 -- Time in seconds
-							local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
-							tween:Play()
-							tween.Completed:Wait()
-
-							repeat
-								wait()
-							until
-							game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0) or finishthing.Touched
-
-							game:GetService("Players").LocalPlayer.Character.Head.Anchored = true
-							wait(1.5)
-							game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
-
-							wait(0.2)
-
-							game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = true
-							wait(0.01)
-							game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = false
-
-							farmstatus.Text = "Waiting for next round."
-
-							wait(1)
-
-							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
-							wait(2)
-							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
-							wait(2)
-							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
-
-							repeat
-								wait()
-							until
-							game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text >= "7:55"
+						if Choice.Text == "instant" then
 
 							farmstatus.Text = "Waiting for anticheat."
 
@@ -2974,12 +3525,148 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 							wait(2)
 							game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
 
-							wait(21)
+							Controls:Disable()
 
 
-						end)
+							wait(15.2)
+
+
+							pcall(function()
+
+								game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+							end)
+
+							secondfarm = true
+							while secondfarm == true do
+								pcall(function()
+
+									if speeding == true then
+
+										farmfalse.Visible = true
+										farmtrue.Visible = false
+										farmstatus.Text = "Disabled."
+										farmstatus.TextColor3 = Color3.fromRGB(175, 175, 175)
+
+										Controls:Enable()
+
+										activation2 = false
+										farmactivated = false
+										secondfarm = false
+										fullydisabled = true
+
+										print("exhibition hub - stopped successfully")
+										print("exhibition hub - cleared phase counters")
+
+										phasecounter = 0
+										anotherphasecounter = 0
+
+
+									end
+
+									pcall(function()
+
+										game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+									end)
+
+									phasecounter +=1
+
+									farmstatus.Text = "Waiting for anticheat."
+									print("exhibition hub - phase"..phasecounter)
+
+									wait(4)
+
+									if game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0) then
+										print("exhibition hub - looks like the user already finished.")
+										farmstatus.Text = "Waiting for next round."
+										repeat
+											wait()
+										until
+										game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(255, 255, 255)
+										wait(19.8)
+									else
+										wait(17.2)
+
+										print("exhibition hub - phase"..phasecounter.." cleared.")
+										farmstatus.Text = "Teleporting."
+
+										Controls:Disable()
+										wait(1.5)
+
+										repeat
+											local endzone = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+
+											local player = game.Players.LocalPlayer.Character
+											player.HumanoidRootPart.CFrame = endzone
+											task.wait()
+											repeat
+												if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+													print("exhibition hub - looking for anticheat suspicions.")
+													local endzone = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+
+													local player = game.Players.LocalPlayer.Character
+													player.HumanoidRootPart.CFrame = endzone
+												else
+													warn("exhibition hub - anticheat detected suspicious movements.")
+													farmstatus.Text = "Attempting to bypass."
+													farmstatus.TextColor3 = Color3.fromRGB(191, 0, 0)
+													wait(29.6)
+													farmstatus.Text = "Teleporting."
+													farmstatus.TextColor3 = Color3.fromRGB(175, 175, 175)
+													Controls:Disable()
+													wait(2.5)
+													repeat
+														local endzone = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+
+														local player = game.Players.LocalPlayer.Character
+														player.HumanoidRootPart.CFrame = endzone
+														wait(0.3)
+													until
+													game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0)
+												end
+												wait(0.1)
+											until
+											game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0)
+										until
+										game.Players.LocalPlayer.PlayerGui.timer.timeLeft.TextColor3 == Color3.fromRGB(0, 255, 0)
+
+
+										wait(5)
+
+										print("exhibition hub - anticheat thinks no suspicious movement happened. phase"..phasecounter.." <!>")
+
+										game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+
+
+										farmstatus.Text = "Waiting for next round."
+
+										wait(5)
+
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+
+										repeat
+											wait()
+										until
+										game.Players.LocalPlayer.PlayerGui.timer.timeLeft.Text >= "7:55"
+
+										farmstatus.Text = "Waiting for anticheat."
+
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+										wait(2)
+										game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+									end
+								end)
+								task.wait()
+							end
+						end
 					end
-					task.wait()
 				end
 
 			else
@@ -2991,7 +3678,6 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				})
 
 			end
-
 		end)
 
 		farmtrue.MouseButton1Down:Connect(function()
@@ -3001,8 +3687,6 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 			speeding = true
 
-			farmactivated = false
-
 			farmstatus.Text = "Disabling."
 
 			pcall(function()
@@ -3010,6 +3694,11 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 				game.Workspace.FallenPartsDestroyHeight = -500
 
 			end)
+
+			while fullydisabled == true do
+				farmfalse.Text = "Disabled."
+				wait(0.1)
+			end
 
 		end)
 
@@ -3052,30 +3741,20 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 		buycratefalse.MouseButton1Down:Connect(function()
 
-			cratesbought.Text = "0"
-			local px = cratesbought.Text*1
+			cratesbought.Text = "?"
 
 			buycratefalse.Visible = false
 			buycratetrue.Visible = true
 
 			while buycratefalse.Visible == false do
-				repeat
-					local value = coinsnowx.Text*1
-					if value >= 500 then
-						-- Script generated by R2Sv2
-						-- R2Sv2 developed by Luckyxero
+				pcall(function()
+					-- Script generated by R2Sv2
+					-- R2Sv2 developed by Luckyxero
 
-						local Event = game:GetService("ReplicatedStorage").openBox
-						Event:InvokeServer("Regular")
+					local Event = game:GetService("ReplicatedStorage").openBox
+					Event:InvokeServer("Regular")
 
-						wait(1)
-						cratesbought.Text = px+1
-					else
-						print("exhibition hub - cleared errors.")
-					end
-					task.wait()
-				until
-				buycratefalse.Visible == true
+				end)
 				task.wait()
 			end
 
@@ -3303,11 +3982,11 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Fortnite bhxalls 🎵", "All")
 			wait(1)
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I'm g4xay 🎵", "All")
-			wait(1.2)
+			wait(0.9)
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I like boys 🎵", "All")
-			wait(1)
+			wait(0.8)
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I kixhdnap autistic kvhids 🎵", "All")
-			wait(1.4)
+			wait(2)
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Lil mosey is white 🎵", "All")
 		end)
 
@@ -3469,6 +4148,164 @@ if game.PlaceId == 1962086868 or 3582763398 or 5253186791 then
 
 		end)
 
+		disablepartsfalse.MouseButton1Down:Connect(function()
+			disablepartsfalse.Visible = false
+			disablepartstrue.Visible = true
+
+			while disablepartsfalse.Visible == false do
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character.KillScript.Disabled = true
+				end)
+				task.wait()
+			end
+		end)
+
+		disablepartstrue.MouseButton1Down:Connect(function()
+
+			pcall(function()
+				repeat
+					wait()
+				until
+				game:GetService("Players").LocalPlayer.Character
+				wait(0.01)
+				game:GetService("Players").LocalPlayer.Character.KillScript.Enabled = true
+			end)
+
+			disablepartsfalse.Visible = true
+			disablepartstrue.Visible = false
+
+		end)
+
+		getalltools.MouseButton1Down:Connect(function()
+			getalltools.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			getalltools.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			if bypassed == true then
+
+				for i,v in pairs(game.ReplicatedStorage.Gear:GetChildren()) do
+					local A = v
+					local B = A:Clone()
+					B.Parent = game.Players.LocalPlayer.Backpack
+				end
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Enable Anticheat Bypass.";
+					Duration = 5;
+				})
+
+			end
+		end)
+
+		modechange.MouseButton1Down:Connect(function()
+			modechange.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			modechange.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			farmselectorframe:TweenPosition(UDim2.new(1.131, -68,0.405, 0))
+
+		end)
+
+		instantmode.MouseButton1Down:Connect(function()
+
+			if activation2 == true or secondfarm == true then
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Disable Autofarm Before Choosing A Mode.";
+					Duration = 5;
+				})
+
+				frameactivated = false
+
+				farmselectorframe:TweenPosition(UDim2.new(0.847, -68,0.402, 0))
+
+			else
+
+				Choice.Text = "instant"
+				farmmode.Text = "Instant Teleport"
+
+				frameactivated = false
+
+				farmselectorframe:TweenPosition(UDim2.new(0.847, -68,0.402, 0))
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Instant Teleporting Is Dangerous. Not Recommended.";
+					Duration = 5;
+				})
+
+			end
+		end)
+
+		smoothmode.MouseButton1Down:Connect(function()
+
+			if activation2 == true or secondfarm == true then
+
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Warning";
+					Text = "Please Disable Autofarm Before Choosing A Mode.";
+					Duration = 5;
+				})
+
+				frameactivated = false
+
+				farmselectorframe:TweenPosition(UDim2.new(0.847, -68,0.402, 0))
+
+			else
+
+				Choice.Text = "smooth"
+				farmmode.Text = "Smooth Teleport"
+
+				frameactivated = false
+
+				farmselectorframe:TweenPosition(UDim2.new(0.847, -68,0.402, 0))
+
+			end
+
+		end)
+
+		rejoincli.MouseButton1Down:Connect(function()
+			rejoincli.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			rejoincli.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			local Players = game:GetService("Players")
+			local PlaceId = game.PlaceId
+			local TeleportService = game:GetService("TeleportService")
+			local JobId = game.JobId
+
+			if #Players:GetPlayers() <= 1 then
+				Players.LocalPlayer:Kick("...")
+				wait()
+				TeleportService:Teleport(PlaceId, Players.LocalPlayer)
+			else
+				TeleportService:TeleportToPlaceInstance(PlaceId, JobId, Players.LocalPlayer)
+			end
+
+
+		end)
+
+
+		finishtp.MouseButton1Down:Connect(function()
+			finishtp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			finishtp.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			local finishthing2 = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+
+			local player = game.Players.LocalPlayer.Character
+			player.HumanoidRootPart.CFrame = finishthing2
+
+			pcall(function()
+
+				game.Workspace.tower.sections.start.floor.floor.Size = Vector3.new(1, 500, 500)
+
+			end)
+		end)
+
+
 	end
 
 else
@@ -3480,3 +4317,32 @@ else
 		Duration = 10.5;
 	})
 end
+-- slow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- hi
